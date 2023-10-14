@@ -1,0 +1,896 @@
+deficiones:
+ios: sistema operativo de iphone.
+macOS: sistema operativco de mac(sobremesa).
+watchOS: sistema operativo de los relojes.
+iPadOS: sistema operativo de los ipad, cosa intermedia entre macOS e IOS.
+
+------------
+
+Objectic-c/Swift: legnuajes de programacion usados.
+Xcode: entorno de desarrollo para cualquiera sistema operativo anteriores.
+
+---------------
+
+Librerias:
+UIkit
+AppKit
+WatchKit
+CocoaTouch
+Playground
+IOS Simulator
+
+---------------
+
+las variables son con var.
+las constantes son con let.
+
+hay que asignar siempre a las variables y a las constantes su tipo
+
+para concadenar varibles se pueden hacer con , como si fuera el +
+
+se puede usar _ como separador de miles -> 13_2222
+
+
+-----------------------------
+
+EJEMPLOS DE CODIGO
+
+/*
+let numero = 0;
+var texto = "Hola mundo";
+
+var hola: String = "Hola Estech";
+var tres: Int;
+tres = 3;
+
+//Para convertir una variable entera a float
+var decimal: Float = Float(tres);
+*/
+
+/*print("Hola a todos")
+
+let nombre: String = """
+Pepe \
+Antonio \
+Juan
+""";
+print(nombre);
+
+let numero: Int = 5;
+print(numero);
+
+print("Hola " ,nombre);
+print("Mi numero es " , numero);
+
+let saldo: Int = 13_333;
+print("El saldo es ",saldo);*/
+
+
+//Boolean
+
+//var correcto:Bool = true
+//correcto = false
+
+//Operadores
+// + - * / %
+
+//Op.asignacion
+// = += -=
+
+/*var a = 2
+a += 2
+print(a)
+
+let hola = "Hola"
+let mundo = "mundo"
+let conjunto = hola + " " + mundo
+print(conjunto)*/
+
+//Relacionales
+
+// >= <= > < == != 
+
+// Logicos
+
+// && || !
+
+//Condicionales
+
+/*if(2 < 3){
+  print("Dos es mas pequeño")
+}else if(2 == 3){
+  print("Si fueran iguales")
+}
+else{
+  print("Esto seria raro")
+}*/
+
+/*let carta1 = 5
+let carta2 = 1
+
+print(carta1 == carta2 ? "Las cartas son iguales" : "Las cartas son diferentes")
+
+if(carta1 == carta2){
+  print("Las cartas son iguales")
+}else{
+  print("Las cartas son diferentes")
+}*/
+
+
+/*let string1 = "Hola"
+let string2 = "Paco"
+print(string1,string2)
+print(string1 + string2)
+print("Hola \(string2) o \(string1)\(string2)")*/
+
+//Switch
+
+// let valor = 27
+
+// switch valor{
+//   case 1: 
+//   print("Uno")
+//   case 2,5:
+//   print("dos o cinco")
+//   case 6...25:
+//   print("Entre 6 y 25")
+//   case 26..<30:
+//   print("Entre 6 y 29")
+//   default:
+//   print("otro numero")
+// }
+
+// let verdad:Bool = true
+
+// switch verdad{
+//   case true:
+//   print("Es verdadero")
+//   case false:
+//   print("Es falso")
+// }
+
+// var weather = "soleado"
+
+// switch weather{
+//   case "llueve":
+//   print("Llevate el paraguas")
+//   case "nieva":
+//   print("Coge la bufanda")
+//   case "soleado":
+//   print("llevate las gafas de sol")
+//   fallthrough
+//   default:
+//   print("Disfruta del dia")
+// }
+
+// let rango = 1...5
+
+//Bucles
+/*
+for i in rango{
+  print(i)
+}
+
+for x in 1...10{
+  print(x)
+}
+
+for n in 1...8{
+  if(n % 2 == 0){
+    print(n)
+  }
+}
+
+for m in 0...10 where m % 2 == 0{
+  print(m)
+}*/
+
+//while
+/*var counter = 0
+
+while counter < 10{
+  print(counter)
+  counter += 1
+}*/
+
+//Repeat
+
+/*var i = 0
+
+repeat {
+  print(i)
+  i += 1
+}while i < 10*/
+
+
+//Operador nullo = _
+
+// for _ in 1...10{
+//   print("hola")
+// }
+
+//Bucle infinito
+
+/*while true{
+  print("hola")
+}*/
+
+/*var i = 0
+repeat {
+  print(i)
+  i += 1
+}while false*/
+
+//Break
+
+// var i = 0
+
+// while i < 5 {
+//   if i == 3 {
+//   break
+//   }
+//   print("i: \(i)")
+//   i += 1
+// }
+
+// for i in 1..<6{
+//   if i == 3 {
+//     break
+//   }
+//   print("i: \(i)")
+// }
+
+//Continue
+
+// while i < 5 {
+//   i += 1
+//   if i == 3 {
+//   continue
+//   }
+//   print("i: \(i)")
+// }
+
+// repeat {
+//   if i == 3{
+//     i += 1
+//     continue
+//   }
+//   print("i: \(i)")
+//   i += 1
+// }while i < 5
+
+// var condicion = true
+// var otraCondicion = true
+// var valor = 5
+
+// while condicion {
+
+//   if otraCondicion {
+
+//     switch valor {
+//       case 0: 
+//       print("cero")
+//       case 1:
+//       print("uno")
+//       default:
+//       break
+//     }
+    
+//     otraCondicion = false
+    
+//   }else {
+//     condicion = false
+//   }
+  
+// }
+
+outerLoop: while condicion {
+
+  if otraCondicion {
+
+    switch valor {
+      case 0: 
+      print("cero")
+      case 1:
+      print("uno")
+      break outerLopp
+      default:
+      print("otro valor")
+      break
+    }
+    
+    otraCondicion = false
+    
+  }else {
+    condicion = false
+  }
+  
+}
+
+var hola: String = "Hola"
+var texto = hola + "que tal"
+texto = "\(hola) que tal"
+
+let a = texto.count
+print(a)
+
+let primerCaracter = texto[texto.startIndex]
+print(primerCaracter)
+
+print(texto.isEmpty)
+print(texto.hasPrefix("Hol"))
+print(texto.contains("l"))
+
+
+-------------------------
+
+
+CONDICIONALES
+
+
+//var str: String? = "Hola" // Tipo String opcional (optional String)
+//var str2: String = "Hola" // Tipo String
+
+// var numero: Int?
+// numero = 33
+
+//print(str!) // Desolviviendo forzado (saca el valor tal cual es)
+//print(numero!) // Desolviviendo forzado (saca el valor tal cual es)
+
+
+// if(str == nil){
+//   print("El string es nulo")
+// }else{
+//   print(str!)
+// }
+
+//Coalescencia nula o dos ??
+
+//let s:String = str ?? "No hay valor"
+// print(s)
+
+// let nombres = ["Santiago", "Maria", "Juan", "Julia"]
+
+//print(nombres.first?.uppercased())
+
+// var str:String?
+
+// str = "Hola Estech"
+
+// if let str2 = str {
+//   print(str2)
+// }else{
+//   print("str era null")
+// }
+
+// //guard (principal uso en una funcion, fuera de ella no tiene sentido)
+
+// guard let str2 = str else {
+//   print(>"str es nulo")
+// }
+// print(str2)
+
+// var religionOpcional: String?
+
+// if religionOpcional != nil{
+//   print(religionOpcional!)
+// }
+
+// if let religion = religionOpcional{
+//   print(religion)
+// }else{
+//   print("Ateo")
+// }
+
+// let religion = religionOpcional ?? nil "Ateo"
+// print(religion)
+
+-------------------------------------------------
+
+// Funciones
+
+  //Funcion que no retorna nada
+func saludo(a nombre: String, de ciudad: String){
+  let saludo = "Hola \(nombre) de \(ciudad)" 
+  print(saludo)
+}
+saludo(a:"Alfonso" de:"Linares")
+
+  //Funcion que retorna
+func saludo(a nombre: String, de ciudad: String) -> String{
+  let saludo = "Hola \(nombre) de \(ciudad)" 
+  return saludo
+}
+let saludo(a:"Alfonso" de:"Linares")
+print(saludo)
+
+ //Funcion que al llamarla no hace falta poner el nombre de las etiquetas
+func max(_ x:Int, _ y:Int) -> Int{
+  if x > y{
+    return x
+  }else{
+    return y
+  }
+}
+print(max(3,5))
+
+ //Funciones que se llamen igual
+func mitad(par: Int) -> Int{
+  return par/2
+}
+
+func mitad(impar: Int) ->{
+  return (impar + 1)/2
+}
+print(mitad(par:8))
+print((impar:11))
+
+  //Funcion que puede ir aumentado los parametros
+func suma(ops: Int...) -> Int{
+  var total = 0
+  for op in ops{
+    total += op
+  }
+  return total
+}
+let sumatorio = sumar(ops: 2,1,3,7,2,9,7,5,8,5,6)
+
+  //Funcion con tuplas
+
+func partir(_ num: Int) ->(Int,Int) {
+  let mitad1 = num /2
+  let mitad2 = num - mitad1
+  return (mitad1,mitad2)
+}
+let mitades = partir(7)
+print(mitades.0)
+
+
+  //Funciones recursivas
+
+func suma(hasta x: Int) ->{
+
+  if (x == 0){
+    return 0
+  }
+    suma(hasta: x - 1)
+}
+
+print(suma(hasta: 5))
+
+func sumaValores(_ valores: [Int]) -> Int{
+
+  if(valores.isEmpty){
+    return 0
+  }else{
+    let primero = valores[0]
+
+    let resto = Array(valores.dropFirst())
+    return primero + sumaValores(resto)
+  }
+}
+
+
+  // Funciones Polimorfismo
+
+import Foundation
+
+func sumarPuntos(c1: CGPoint, c2: CGPoint)-> CGPoint{
+    return CGPoint(x: c1.x + c2.x, y:c1.y + c2.y)
+}
+
+func sumarPuntos(c1x: CGFloat, c1y:CGFloat, c2x: CGFloat, c2y: CGFloat) -> CGPoint{
+  return CGPoint(x:c1x + c2x, y: c1y + c2y)
+}
+
+let punto1 = CGPoint(x:1, y:2)
+let punto2 = CGPoint(x:3, y:4)
+
+print(sumarPuntos(c1: punto1, c2: punto2))
+print(sumarPuntos(c1x: punto1.x, c1y: punto1.y, c2x: punto2.x, c2y: punto2.y))
+
+  //Funcion con valores defecto
+
+func unirCadenas(cadenas:[String], _ separador:Character) -> String{
+  var union: String = ""
+  for cadena in cadenas {
+    union = "\(union)\(cadena)\(separador)"
+  }
+  return union
+}
+
+let t1 = unirCadenas(cadenas: ["Hola", "mundo", "Estech"], "-")
+print(t1)
+
+let t2 = unirCadenas(cadenas: ["Hola", "mundo", "Estech"], " ")
+print(t2)
+
+// Defer
+func saludos(){
+  
+    print("Hello word")
+  defer{
+    print("Bye!")
+  }
+  
+  print("Welcome")
+  defer{
+    print("Catch you later!")
+  }
+  print("Please, take a seat.")
+  
+}
+
+print("Starting program...")
+saludos()
+print("Ending program")
+
+  //Funcion: parametros inout
+
+func multiplicadoPorDos(number: inout Int) -> Int{
+  var number2 = number * 2
+  return number2
+}
+
+var num = 5
+print("Num al principio vale \(num)")
+print(multiplicadoPorDos(number: &num))
+print("Num ahora vale \(num)")
+
+
+--------------------------------------
+
+
+struct CoordsPantalla{
+  var posX = 0
+  var posY = 0
+}
+
+class Ventana{
+  var esquina = CoordsPantalla()
+  var altura = 0
+  var anchura = 0
+  var visible = true
+  var etiqueta: String?
+}
+
+var unasCoordenadas = CoordsPantalla()
+
+print(unasCoordenadas)
+
+var ventana = Ventana()
+
+print(ventana)
+
+// inicializador memberwise -> solo para estructuras
+//var otraPantalla = CoordsPantalla(posX:17,posY:48)
+
+var otrasCoords = unasCoordandas
+
+otrasCoords.posx = 33
+otrasCoords.posY = 43
+print(otrasCoords)
+print(unasCoordenadas)
+
+var ventana1 = Ventana()
+ventana1.esquina = CoordsPantalla(posX:35, posY:45)
+ventana1.altura = 800
+ventana1.anchura= 600
+ventana1.etiqueta = "Nueva Ventana"
+
+var ventana2 = ventana1
+
+ventana2.esquina = CoordsPantalla()
+ventana2.altura = 1600
+print(ventana2.altura)
+print(ventana1.altura)
+
+
+class Singer{
+  var name = "Taylor Swift"
+}
+
+var singer = Singer()
+
+print(singer.name)
+
+var singer2 = singer
+singer2.name = "Justin Bieber"
+print(singer2.name)
+
+let coords = CoordsPantalla()
+//no deja cambiar niguna propiedad
+//coords.posX = 40
+
+let ventana3 = Ventana()
+ventana3 = Ventana()
+//Aqui si deja cambiar los atributos de la clase
+ventana3.altura = 600
+ventana3.anchura = 800
+ventana3.esquina = CoordsPantalla(posX:100, posY:150)
+print(ventana3)
+
+let ventana4 = Ventana()
+let ventana5 = ventana4
+let ventana6 = Ventana()
+
+//Operador de identidad
+print(ventana4 === ventana5)
+print(ventana5 === ventana6)
+
+//Propiedad almacenadas
+
+struct RangoLongitudFija{
+  var primerValor: Int
+  let longitud:Int
+}
+
+var rango1 = RangoLongitudFija(primerValor:3,longitud:34)
+print(rango1.primerValor)
+print(rango1.longitud)
+
+//Propiedades calculadas
+
+struct Sport{
+  var name:String
+  var isOlympic: Bool
+
+  var olympicStatus: String{
+    get{
+      if isOlympicSport{
+        return "\(name) es un deporte Olimpico"
+      }else{
+        return "\(name) no es un deporte Olimpico"
+      }
+      
+    }
+    
+  }
+  
+}
+
+//podemos no poner el get ya que lo identifica solo
+
+let chessBoxing = Sport(name: "chessBoxing", isOlympicSport: false)
+
+print(chessBoxing.name)
+print(chessBoxing.olympicStatus)
+
+struct Punto{
+  var x = 0.0, y = 0.0
+}
+struct Tamanno{
+  var ancho = 0.0, alto = 0.0
+}
+struct Rectangulo{
+  var origen:Punto = Punto()
+  var tamanno = Tamanno()
+  var centro: Punto{
+    get{
+      let centroX = origen.x + (tamanno.ancho / 2)
+      let centroY = origen.y + (tamanno.alto / 2)
+      return Punto(x: centroX, y: centroY)
+    }
+    set(centroNuevo){ // si no definimos una variable nueva como centroNuevo por defecto es newValue
+      origen.x = centroNuevo.x - (tamanno.ancho / 2)
+      origen.y = centroNuevo.y - (tamanno.alto / 2)
+    }
+    
+  }
+  
+}
+
+var cuadrado = Rectangulo(origen: Punto(x: 2.0, y: 2.0),
+                                        tamanno: Tamanno(ancho: 6.0, alto:6.0))
+
+let centroInicial = cuadrado.centro
+print(centroInicial)
+cuadrado.centro = Punto(x:10.0, y:10.0)
+print("Cuadrado.origen esta ahora en \(cuadrado.origen.x), \(cuadrado.origen.y)")
+))
+
+// Observadores de propiedades
+
+struct Progress {
+  var task: String
+  var amount: Int{
+    didSet{
+      print("La tarea \(task) lleva un \(amount)% completado")
+    }
+  }
+}
+
+var progress = Progress(task: "Cargando...", amount: 0)
+progress.amount = 30
+progress.amount = 80
+progress.amount = 100
+
+
+// class ContadorPasos{
+//   var totalPasos: Int = 0{
+//     willSet(nuevoTotalPasos){
+//       if(nuevoTotalPasos > totalPasos){
+//         print("Voy a actualizar totalPasos a \(nuevoTotalPasos)")
+//       }
+//     }
+//     didSet{
+//       if(totalPasos > oldValue){
+//         print("Añadidos \(totalPasos - oldValue) pasos")
+//       }
+//       if(totalPasos < oldValue){
+//         totalPasos = oldValue
+//       }
+//     }
+//   }
+// }
+
+// let contador = ContadorPasos()
+
+// contador.totalPasos = 1
+// contador.totalPasos = 5
+// contador.totalPasos = 3
+// contador.totalPasos = -2
+// print(contador.totalPasos)
+
+
+// var x = 10{
+//   didSet{
+//     print("El nuevo valor: \(x) y el antiguo es: \(oldValue)")
+//   }
+// }
+// x = 20
+
+// var y = 2 * x
+
+// var z: Int{
+//   get{
+//     return x + y 
+//   }
+//   set {
+//     x = newValue / 2
+//     y = newValue / 2
+//   }
+// }
+
+// print("Z: \(z)")
+// z = 100
+// print("X: \(x)")
+// print("Y: \(y)")
+// print("Z: \(z)")
+// x = 3
+// print("X: \(x)")
+// print("Y: \(y)")
+// print("Z: \(z)")
+// y = 5
+// print("X: \(x)")
+// print("Y: \(y)")
+// print("Z: \(z)")
+
+
+struct UnaEstructura{
+  static var almacenada = "A"
+  static var calculada: Int{
+    return 1
+  }
+}
+
+class UnaClase{
+  static var almacenada = "A"
+  static var calculada: Int{
+    return 1
+  }
+}
+
+print(UnaEstructura.almacenada)
+UnaEstructura.almacenada = "B"
+print(UnaEstructura.almacenada)
+print(UnaClase.calculada)
+
+let instancia = UnaClase()
+//print(instancia.almacenada) // Error-> es una propiedad del tipo
+
+struct Valor{
+  static var sumaValores = 0
+  var valor: Int = 0{
+    didSet{
+      Valor.sumaValores += valor
+    }
+  }
+}
+
+var c1 = Valor()
+var c2 = Valor()
+var c3 = Valor()
+print(Valor.sumaValores)
+c1.valor = 3
+c2.valor = 5
+c3.valor = 2
+print(Valor.sumaValores)
+
+class Animal{
+  let nombre: String 
+  var peso: Double
+
+  init(nombre:String, peso: Double){
+    self.nombre = nombre
+    self.peso = peso
+  }
+
+  func comer(comida: Double){
+    peso += comida
+  }
+
+  func ruido(){
+    print("Grrrrr!")
+  }
+}
+
+var animal1 = Animal(nombre: "perro", peso: 20.4)
+animal1.comer(comida:1.5)
+//print(animal1.peso)
+
+
+class Perro: Animal{
+  let color: String
+  private var numeroPatas: Int
+
+  public var patas: Int {
+    get {
+      return self.numeroPatas    
+    }
+    
+    set(nuevoValor){
+      if(nuevoValor <= 4){
+        self.numeroPatas = nuevoValor
+      }
+      
+    }
+  }
+  
+  init(){
+    color = "Blanco"
+    numeroPatas = 4
+    super.init(nombre: "perrito", peso: 1)
+  }
+}
+
+var perro1 = Perro()
+print(perro1.color)
+
+print(perro1.patas)
+perro1.patas = 3 
+
+//perro1.numeroPatas = 10 -> Da error por que es una propiedad privada
+
+print(perro1.peso)
+perro1.comer(comida: 1)
+print(perro1.peso)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

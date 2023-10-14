@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fabrica codigo="33">
+    <empleado>
+        <id>1</id>
+        <nombre>jose</nombre>
+        <email>jose@ag.es</email>
+    </empleado>
+
+    <empleado>
+    <id>2</id>
+    <nombre>paco</nombre>
+    <email>pago@ag.es</email>
+</empleado>
+
+    <empleado>
+    <id>3</id>
+        <nombre>emiio</nombre>
+        <email>emiio@ag.es</email>
+    </empleado>
+    
+</fabrica>

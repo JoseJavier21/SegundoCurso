@@ -1,0 +1,10 @@
+	Fira Code semiBold 600:
+
+CSS rules to specify families
+font-family: 'Fira Code', monospace;
+
+@import
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+</style>
