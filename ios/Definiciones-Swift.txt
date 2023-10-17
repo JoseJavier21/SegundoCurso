@@ -866,9 +866,260 @@ print(perro1.peso)
 perro1.comer(comida: 1)
 print(perro1.peso)
 
+class Animal{
+  let nombre: String
+  var peso: Double
+
+  init(nombre: String, peso: Double){
+    self.nombre = nombre
+    self.peso = peso
+  }
+
+  func comer(comida: Double){
+    peso += comida
+  }
+  func ruido(){
+    print("Grrrr!")
+  }
+}
+
+class Perro: Animal{
+  public let color: String
+  private var numeroPatas: Int
+  public var patas: Int{
+    
+    get{
+      numeroPatas // return self.numerosPatas
+    }
+    
+    set(nuevoValor){
+      if(nuevoValor <= 4){
+        self.numeroPatas = nuevoValor
+      }
+    }
+    
+    init(){
+      color = "Blanco"
+      numeroPatas = 4
+      super.init(nombre: "Perrito", peso: 1)
+    }
+
+    init(nombre: String, peso: Int, color: String){
+      self.color = color
+      self.numeroPatas = 4
+      self.nombre = nombre
+      self.peso = peso
+    }
+  }
+}
+
+var miPerro = Perro()
+
+------------------------------------------
 
 
+enum Dia{
+  case Lunes
+  case Martes
+  case Miercoles
+  case Jueves
+  case Viernes
+}
 
+var hoy = Dia.Lunes
+
+// si la variable puede saber el tipo con poner punto y el valor funciona
+hoy = .Viernes
+
+func asignatura(day: Dia){
+
+  switch day{
+
+    case .Lunes: 
+      print("IOS")
+
+    case .Miercoles:
+      print("IOS x2")
+
+    case .Jueves:
+      print("IOS x2")
+
+    default: 
+      print("No hay IOS")
+  }
+
+}
+
+hoy = .Lunes
+
+// asignatura(day: hoy)
+// asignatura(day: Dia.Martes)
+// asignatura(day: .Miercoles)
+
+// Enumeracion Instanciable
+
+enum Multiple{
+  case num(Int)
+  case str(String)
+}
+
+let valor1 = Multiple.num(5)
+let valor2 = Multiple.str("Hola")
+
+func imprime(multiple: Multiple){
+
+  switch multiple{
+    case let .num(x):
+      print("Multiple tiene un Int: \(x)")
+    case let .str(s):
+      print("Multiple tiene un string: \(s)")
+  }
+}
+
+imprime(multiple: valor1)
+imprime(multiple: valor2)
+
+enum CodigoBarra{
+  case upc(Int, Int, Int, Int)
+  case qrCode(String)
+}
+
+var codigoProducto = CodigoBarra.upc(8, 68455, 15551, 3)
+codigoProducto = .qrCode("shfgkhhfgk")
+
+switch codigoProducto{
+  case let .upc(sistemaNumeracion, fabricante, producto, control): 
+    print("UPC: \(sistemaNumeracion), \(fabricante), \(producto), \(control)")
+  case let .qrCode(codigoProducto):
+    print("QR: \(codigoProducto)")
+}
+
+enum Golpe{
+  case golpeLeve(Int)
+  case golpeMedio(Int)
+  case golpeFuerte(Int)
+  case golpeMortal
+}
+
+class Arma{
+  var tipoGolpe: Golpe?
+}
+
+let espada = Arma()
+espada.tipoGolpe = .golpeFuerte(8)
+
+class Personaje{
+  var vida = 100
+  var fuerza = 100
+}
+
+let guerrero = Personaje()
+
+switch espada.tipoGolpe!{
+  case .golpeLeve(let puntos): 
+    guerrero.vida -= puntos
+
+  case .golpeMedio(let puntos) where puntos <= 5:
+    guerrero.vida -= puntos * 2
+
+  case .golpeMedio(let puntos) where puntos > 5:
+    guerrero.vida -= puntos * 3
+
+  case .golpeFuerte(let puntos):
+    guerrero.vida -= puntos * 3
+    guerrero.fuerza -= puntos
+
+  case .golpeMortal:
+    guerrero.vida = 0
+
+  default:()
+}
+
+print(guerrero.vida)
+print(guerrero.fuerza)
+
+
+// Enumeracions: rawValue == valor bruto
+
+enum Direccion: String{
+  case norte, sur, este, oeste
+  // case norte = "north"
+  // case sur = "south"
+  // case este = "east"
+  // case oeste = "west"
+}
+
+let direccionAtardecer: Direccion = Direccion.oeste
+print(direccionAtardecer.rawValue)
+
+let direccionAmanecer: String = Direccion.este.rawValue
+print(direccionAmanecer) // lo saca en tipo String
+
+enum Planet: Int{
+  case mercury = 1 // dandole un valor al primero a los enumera sucesivamente
+  case venus = 5
+  case earth
+  case mars = 9
+}
+
+
+//let tierra = Planet.earth
+let tierra = Planet(rawValue: 2)
+if let t = tierra{
+print(t.rawValue)
+}
+
+enum Quiniela: Int{
+  case uno = 1, equis = 0, dos = 2
+}
+
+let valorEquis: Int = Quiniela.equis.rawValue // tipo Entero
+
+let res: Quiniela = Quiniela.equis // tipo Quiniela
+let valorEquit: Int = res.rawValue // tipo Entero
+
+enum CaracterControlASCII: Character{
+  case tab = "\t"
+  case nuevaLinea = "\n"
+  case retorno = "\r"
+}
+
+let nuevaLinea: Character = CaracterControlASCII.nuevaLinea.rawValue
+print(nuevaLinea)
+
+indirect enum ExpresionAritmetica{
+  case numero(Int)
+  case suma(ExpresionAritmetica, ExpresionAritmetica)
+  case multiplicacion(ExpresionAritmetica, ExpresionAritmetica)
+}
+
+let cinco = ExpresionAritmetica.numero(5)
+let cuatro = ExpresionAritmetica.numero(4)
+
+let suma = ExpresionAritmetica.suma(cinco, cuatro)
+let multiplicacion = ExpresionAritmetica.multiplicacion(ExpresionAritmetica.numero(2), suma)
+
+func evalua(expresion: ExpresionAritmetica) -> Int{
+
+  switch expresion{
+    case let .numero(valor):
+      return valor
+    case let .suma(izquierda, derecha):
+      let valorIzq = evalua(expresion: izquierda)
+      let valorDer = evalua(expresion: derecha)
+      let resSuma = valorIzq + valorDer
+      return resSuma
+      //return evalua(expresion: izquierda) + evalua(expresion: derecha)
+
+    case let .multiplicacion(izquierda, derecha):
+      return evalua(expresion: izquierda) * evalua(expresion: derecha)
+  }
+
+}
+
+print(evalua(expresion: cinco))
+print(evalua(expresion: suma))
+print(evalua(expresion: multiplicacion))
 
 
 
