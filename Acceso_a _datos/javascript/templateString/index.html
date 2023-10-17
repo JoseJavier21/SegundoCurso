@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Interpolacion de variables y template string-->
+
+    <div></div>
+    <p></p>
+
+
+
+    <script>
+
+        let nombre = "Ana"
+        let email = "anaemail22@gmail.com"
+
+        let container = document.querySelector("div")
+        let parrafo = document.querySelector("p")
+
+        let profesor = {
+            "nombre": "Lucia",
+            "email": "luciacorreo@gmail.com"
+        }
+
+        container.innerHTML = `<h1>Nombre: ${nombre}, ${email}</h1>`
+        parrafo.innerHTML =  `${profesor.nombre}, ${profesor.email}`
+
+
+        // callbacks (son funciones pasadas como argumentos a otras funciones)
+
+
+        function texto(){
+            console.log("Hola")
+        }
+
+        function otroTexto(){
+            console.log("que tal?")
+        }
+
+        function mensaje(nombre, fn, fnDos){
+            console.log(nombre)
+
+            fn()
+            fnDos()
+        }
+
+        mensaje("Juan", texto, otroTexto)
+
+
+    </script>
+    
+</body>
+</html>
