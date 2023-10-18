@@ -866,6 +866,66 @@ print(perro1.peso)
 perro1.comer(comida: 1)
 print(perro1.peso)
 
+// Errores
+
+enum PassWordError: Error{
+  case obvious
+}
+
+func checkPassword(password: String) throws -> Bool{
+  if password == "password"{
+    throw PassWordError.obvious
+  }
+
+  return true
+}
+
+// do{
+//   try checkPassword(password: "123456")
+//   print("La contraseña es valida")
+// }catch PassWordError.obvious{
+//   print("La contraseña no es segura")
+// }
+
+// Diferente Forma -- try?
+
+if let result = try? checkPassword(password: "1343258"){
+  print("La contraseña es valida")
+}else{
+  print("La contraseña no es segura")
+}
+
+// !--> con la exclamacion estas diciendo que seguro vas a devolver un valor
+
+// try!
+try! checkPassword(password: "132414")
+print("Contraseña correcta")
+
+
+// enum DivisionError: Error{
+//   case entreCero
+// }
+
+// func division(op1: Float, op2: Float) throws -> Float{
+
+//   if op2 == 0{
+//     throw DivisionError.entreCero
+//   }
+
+//   return op1 / op2
+// }
+
+// do{
+
+//   var resultado: Float
+//   try resultado = division(op1: 9, op2: 3)
+//     print("El resultado es \(resultado)")
+
+// }
+//   catch DivisionError.entreCero{
+//     print("No se puede dividir por cero")
+// }
+
 
 
 
