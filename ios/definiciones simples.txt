@@ -928,6 +928,104 @@ print("Contraseña correcta")
 
 
 
+// Diccionarios
+var spanishEnglish = [String: String]()
+
+print(spanishEnglish.isEmpty)
+
+spanishEnglish["Hola"] = "Hello"
+spanishEnglish["Feo"] = "Ugly"
+spanishEnglish["Casa"] = "House"
+
+print(spanishEnglish.isEmpty)
+
+var numeros:[Int:String] = [1: "uno", 2: "dos", 3: "tres", 4: "cuatro", 5: "cinco", 6: "cinco"]
+
+print(numeros.count)
+
+var miDiccionario: [Int: Double] = [:]
+
+var diccionario = Dictionary<String,Double>()
+
+print(numeros[2]!)
+
+for(key, value) in numeros{
+  print("El numero \(clave) se dice \(valor")
+}
+
+numeros[6] = "seis"
+
+spanishEnglish["Casa"] = "Home"
+
+print(spanishEnglish["Casa"]!)
+
+if let palabra = spanishEnglish.updateValue("House", forKey: "Casa"){
+  print("El valor anterior era \(palabra)")
+}
+
+  
+for (es, en) in spanishEnglish{
+  print("\(es) en ingles se dice \(en)")
+}
+
+spanishEnglish["Casa"] = nil // no se pone como nulo si no que se borra 
+
+spanishEnglish.removeValue(forKey: "Hola")
+
+// Crear un array a partir de un diccionario
+
+var claves = Array(spanishEnglish.keys)
+print(claves)
+var valores = Array(spanishEnglish.values)
+print(valores)
+
+// Colecciones vacias 
+
+  //Diccionarios Vacios
+var dic1 = [String: String]()
+var dic2: [Int: Double] = [:]
+var dic3 = Dictionary<Int, String>()
+var dic4 = Dictionary<Int, String> = [:]
+
+  // Array Vacios
+var arr1 = [String] = ()
+var arr2: [Int] = []
+var arr3 = Array<String>()
+var arr4 = Array<String> = []
+
+  // Sets
+var set1 = Set<String>()
+var set2: Set<String> = []
+
+
+let heladoFavoritos = [
+  "Joaquin": "Turron",
+  "Ivan": "Trufa",
+  "Francis": "Vainilla",
+  "Juan Luis": "Chocolate"
+]
+
+print(heladoFavoritos["Francis"]!)
+
+print(heladoFavoritos["Jose Juan", default: "Chocolate"])
+
+heladoFavoritos.forEach{ (nombre, sabor) in
+  print("\(nombre) le gusta el saber \(sabor)")
+}
+
+let array = ["jose", "julio", "vicente", "diego", "joaquin", "Fernando"]
+
+array.forEach{ nombre in 
+  print(nombre)
+}
+
+heladoFavoritos = [:]
+
+let ordenados = heladosFavoritos.sorted()
+  
+
+// Nueva implementacion de swift --> mirar sobre los if que se guarda en una variable
+
 
 
 

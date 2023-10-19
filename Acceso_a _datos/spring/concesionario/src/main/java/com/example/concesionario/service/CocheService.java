@@ -16,4 +16,8 @@ public class CocheService {
     public List<Coche> listaCoche(){
         return cocheRepositorio.findAll();
     }
+
+    public void guardarCoche(Coche coche){
+        cocheRepositorio.save(coche);
+    }
 }

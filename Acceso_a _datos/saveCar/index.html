@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form>
+
+        <input type="text" name="" id="marca" placeholder="Marca" autocomplete="off"><br>
+        <input type="text" name="" id="modelo" placeholder="Modelo" autocomplete="off"><br>
+        <input type="text" name="" id="precio" placeholder="Precio" autocomplete="off"><br>
+
+        <button type="submit">Guardar Coche</button>
+    </form>
+
+    
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <script>
+
+        let form = document.querySelector("form")
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault()
+
+            console.log("enviando el formulario...")
+
+            let marca = document.getElementById("marca").value
+            let modelo = document.getElementById("modelo").value
+            let precio = document.getElementById("precio").value
+
+
+            console.log(marca)
+            console.log(modelo)
+            console.log(precio)
+
+
+            const postData = {
+                "marca" : marca,
+                "modelo" : modelo,
+                "precio" : precio
+            }
+
+            const apiUrl = "http://localhost:8080/api/save"
+
+            axios.post(apiUrl, postData)
+            .then(response => {
+
+                console.log("Respuesta exitosa", response.data)
+            })
+            .catch(error => {
+                console.log("Error al realizar la solicitud POST", error)
+            })
+
+        })
+
+    </script>
+</body>
+</html>
