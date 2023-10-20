@@ -1,14 +1,13 @@
-package com.example.concesionario;
+package com.ejercicio.Telecom;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConcesionarioApplication {
+public class TelecomApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConcesionarioApplication.class, args);
+		SpringApplication.run(TelecomApplication.class, args);
 	}
-	
 
 }

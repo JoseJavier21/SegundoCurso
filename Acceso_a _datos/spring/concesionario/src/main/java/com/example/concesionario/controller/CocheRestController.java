@@ -22,8 +22,42 @@ public class CocheRestController {
     }
 
     @PostMapping("/save")
-    public void save(@RequestBody Coche coche){
-        cocheService.guardarCoche(coche);
+    public Coche save(@RequestBody Coche coche){
+     return cocheService.guardarCocheApi(coche);
     }
 
+    @GetMapping("/coche/{id}")
+    public Coche searchId(@PathVariable Long id){
+        return cocheService.searchById(id);
+    }
+
+    @GetMapping("/by-marca/{marca}")
+    public List<Coche> mostrarPorMarca(@PathVariable String marca){
+        return cocheService.searchByMarca(marca);
+    }
+
+    @GetMapping("/by-modelo/{modelo}")
+    public List<Coche> mostrarPorModelo(@PathVariable String modelo){
+        return cocheService.searchByModelo(modelo);
+    }
+
+    @GetMapping("/by-precio/{precio}")
+    public List<Coche> mostrarPorPrecio(@PathVariable Double precio){
+        return cocheService.searchByPrecio(precio);
+    }
+
+    @DeleteMapping("/coche/delete/{id}")
+    public void borrarCoche(@PathVariable Long id){ cocheService.deleteCar(id);}
+
+    @PutMapping("/coche/modificar/{id}")
+    public Coche modificarCoche(@RequestBody Coche coche, @PathVariable Long id){
+
+        Coche cocheExite = cocheService.searchById(id);
+
+        cocheExite.setMarca(coche.getMarca());
+        cocheExite.setModelo(coche.getModelo());
+        cocheExite.setPrecio(coche.getPrecio());
+
+        return cocheService.guardarCocheApi(cocheExite);
+    }
 }

@@ -20,4 +20,26 @@ public class CocheService {
     public void guardarCoche(Coche coche){
         cocheRepositorio.save(coche);
     }
+
+    public Coche guardarCocheApi(Coche coche) { return cocheRepositorio.save(coche);}
+
+    public Coche searchById(Long id){
+        return cocheRepositorio.findById(id).orElse(null);
+    }
+
+    public List<Coche> searchByMarca(String marca){
+        return cocheRepositorio.findByMarca(marca);
+    }
+
+    public List<Coche> searchByModelo(String modelo){
+        return cocheRepositorio.findByModelo(modelo);
+    }
+
+    public List<Coche> searchByPrecio(Double precio){
+        return cocheRepositorio.findByPrecio(precio);
+    }
+
+    public void deleteCar(Long id){ cocheRepositorio.deleteById(id);}
+
+
 }
