@@ -1028,11 +1028,365 @@ let ordenados = heladosFavoritos.sorted()
 
 
 
+// Protocol
+
+protocol Identifiable{
+  var id: String { get set }
+}
+
+struct Usuario: Identifiable{
+
+  var id: String
+}
+
+func displayId(thing: Identifiable){
+  print("My Id is \(thing.id)")
+}
+
+let usuario1 = Usuario(id: "1234")
+
+displayId(thing: usuario)
+
+struct Libro: Identifiable{
+  var title: String?
+  var autor: String?
+  var id: String
+}
+
+let libro = Libro(id: "a123")
+
+displayId(thing: libro)
+
+class Coche: Identifiable{
+  var marca: String?
+  var modelo: String?
+  var id: String = "coche1"
+}
+
+let coche = Coche()
+
+displayId(thing: coche)
 
 
 
 
+// Protocol heradar
 
+protocol Pagable{
+  func calculateWages() -> Int
+}
+
+protocol NeedsTraining{
+  func study()
+}
+
+protocol HasVacation{
+  func takeVacation(day: Int)
+}
+
+protocol Employee: Payable, NeedsTrainig, HasVacation{ }
+
+class Trabajador: Employee{
+
+  func calculateWages() -> Int{
+    return 1000
+  }
+  func study(){
+    print("Aprendiendo...")
+  }
+  
+  func takeVacation(day: Int){
+    print("Estoy de vacaciones")
+  }
+}
+
+import Foundation
+
+protocol Evento{
+  func laAlarmaHaSonado()
+}
+
+class Alarma{
+  var delegate: Evento?
+
+  func sonar(segundos: Int){
+    sleep(UInt32(segundos)){
+      if let del = delegate{
+        del.laAlarmaHaSonado()
+      }
+    }
+  }
+}
+
+class Sirena: Evento{
+  var alarma = Alarma()
+
+  init(){
+    alarma.delegate = self
+    alarma.sonar(segundos: 5)
+  }
+  
+  func laAlarmaHaSonado(){
+    print("pi pi pi")
+  }
+  
+}
+
+let d = Sirena()
+
+class SirenaSilenciosa: Evento{
+  var alarma = Alarma()
+
+  init(){
+    alarma.delegate = self
+    alarma.sonar(segundos: 3)
+  }
+
+  func laAlarmaHaSonado(){
+    print("Llamando a la Policia")
+  }
+
+}
+
+AlarmaSilenciosa()
+
+
+protocol Mortal{
+  var muerto: Bool{ get }
+  func muere()
+}
+
+class Personaje{
+
+  var nombre: String
+  var vida: Int
+
+  init(nombre: String, vida: Int){
+    self.nombre = nombre
+    self.vida = vida
+  }
+
+}
+
+// class Heroe: Personaje, Mortal{
+//   var muerto: Bool{
+//     return vida <= 0
+//   }
+  
+//   func muere(){
+//     print("Animacion de muerte")
+//   }
+// }
+
+extension Personaje: Mortal{
+  var muerto: Bool{
+    return vida <= 0
+  }
+
+  func muere(){
+    print("Animacion de muerte")
+  }
+}
+
+class Heroe: Personaje{}
+
+let hero = Heroe(nombre: "asdad", vida: 10)
+hero.muere()
+
+
+// Tipos funcion
+
+func suma(a: Int, b: Int) -> Int{
+  return a + b
+}
+
+let miSuma = suma
+// let miSuma: (Int, Int) -> Int = suma 
+
+let resultado = miSuma(3,4)
+print("El resultado de la suma es \(resultado)")
+
+
+func aplicarOperacion(_ operacion: (Int, Int) -> Int, a: Int, b: Int) -> Int {
+  return operacion(a,b)
+}
+
+let resultadoAplicarOperacion = aplicaOperacion(suma, a: 5, b:3)
+print("El resultado es \(resultadoAplicarOperacion)")
+
+func obtenerOperacion() -> ((Int, Int) -> Int){
+  return suma
+}
+
+let funcionObtenida = obtenerOperacion()
+let resultadoFuncionObtenida = funcionObtenida(5,8)
+print("El resultado de la funcion obtenida es \(resultadoFuncionObtenida)")
+
+// Funciones Anonimas
+
+let driving = {
+  print("Estoy conduciendo mi coche")
+}
+driving()
+
+let driving2 = { (place: String) -> String in
+  return "Estoy conduciendo mi coche hacia \(place)"
+}
+
+let frase = driving2("Jaen")
+
+print(frase)
+
+func add42(_ number: Int) -> Int{
+  return number + 42
+}
+
+print( add42(5) )
+
+
+
+let add42Clousure = { (number: Int) -> Int in
+  return number + 42
+}
+
+print( add42Clousure42(5) )
+
+/*
+() -> String
+(String, Int) -> Void
+*/
+
+func add10(_ number: Int) -> Int{
+  return number + 10
+}
+
+func apply(_ function: (Int)-> Int, with number: Int) -> Int{
+  return function(number)
+}
+
+let res1 = apply(add42, with: 8)
+print(res1)
+
+let res2 = apply(add10, with: 8)
+print(res2)
+
+
+let driving: () -> Void = { // tipo vacio que no devuelve nada
+  print("Estoy conduciendo mi coche")
+}
+
+let flying = {
+  print("Estoy volando")
+}
+
+func travel(action: ()-> Void){
+  print("Listo para salir")
+  action()
+  print("He llegado")
+}
+
+travel(action: driving) 
+// travel(action: flying)
+
+func adder(number: Int) -> (Int) -> Int{
+  func add(x: Int) -> Int{
+    return number + x
+  }
+
+  return add
+}
+
+let aadd42 = adder(number: 42)
+
+let aadd10 = adder(number: 10)
+
+let cincuenta = add42(8)
+print(cincuenta)
+
+let res3 = aadd10(8)
+print(res3)
+
+
+// Clousures en colecciones
+
+func identidad(_ x: Int) -> Int{
+  return x
+}
+
+func dobles(_ x: Int) -> Int{
+  return x + x 
+}
+
+func cuadrado(_ x: Int) -> Int{
+  return x * x
+}
+
+let funciones: [(Int) -> Int] = [identidad, doble, cuadrado]
+
+let f1 = funciones[0](10)
+print(f1)
+print(funciones[1](10))
+print(funciones[2](10))
+
+
+for funcion in funciones{
+  print(funcion(8))
+}
+
+let funcionesList = [
+  add42, // tipo funcion que recibe un entero y devuelve un entero (Int) -> Int
+  { (number: Int) -> Int in return number + 42 }, // Sintexis explicita
+  { (number: Int) in return number + 42 }, // omitimos lo que devuelve, infiere el tipo del retorno
+  { number in return number + 42}, // Omitimos el tipo del parametro de entrada
+  { number in number + 42}, // omitimos el return ya que solo tiene una linea de codigo
+  { $0 + 42}, // omitimos el nombre de los parametros de entrada, que se cambia por $0 , $1, ....
+]
+
+
+
+// sorted(by:)
+
+let estudiantes = ["Julio", "Alicia", "Pedro", "Julia", "Alejandro"]
+
+let ordenados = estudiantes.sorted()
+print(ordenados)
+
+//func sorted(by: areInIncreasingOrder: (Element, Element) -> Bool)
+
+
+func primerMayor(s1: String, s2: String) -> Bool{
+  return s1 > s2
+}
+
+let alreves = estudiantes.sorted(by: primerMayor)
+print(alreves)
+
+
+// Mas corto
+
+let alreves2 = estudiantes.sorted(by: { (s1: String s2: String) -> Bool in
+  return s1 > s2
+})
+print(alreves2)
+
+// Aun mas corto
+
+let alreves3 = estudiantes.sorted(by: {$0 > $1})
+print(alreves3)
+
+// Todavia mas corto
+
+let alreves4 = estudiantes.sorted(by: >)
+print(alreves4)
+
+
+// Training clousure // clousure al final
+
+let alreves5 = estudiantes.sorted() { $0 > $1 }
+print(alreves5)
+
+let alreves6 = estudiantes.sorted { $0 > $1 }
+print(alreves6)
 
 
 
