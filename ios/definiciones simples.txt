@@ -1388,6 +1388,131 @@ print(alreves5)
 let alreves6 = estudiantes.sorted { $0 > $1 }
 print(alreves6)
 
+// Captura valores 
+
+func travel() -> (String) -> Void{
+  var count = 0
+  return { print("\(count): Estoy llendo a \($0)")}
+  count += 1
+}
+
+// Si le quitamos los parentesis a travel
+//let result: () -> (String) -> Void = travel
+
+
+// Se le ponemos los parentesis a travel
+let result: (String) -> Void = travel()
+result("Linares")
+result("Jaen")
+result("Linares")
+
+
+// Funciones de orden superior: map, filter, reduce...
+
+// Map (protocolo CollectionType)
+
+// fun map<T>(_ transform: (Element) -> T) -> [T]
+
+//let numeros  = [1,2,3,4,5,6]
+let numeros = [Int](0...10)
+
+let res = numeros.map() {$0 * $0}
+print(res)
+
+func suma(parejas: [(Int, Int)]) -> [Int]{
+
+  return parejas.map() { (pareja: (Int, Int)) -> Int in 
+    return pareja.0 + pareja.1
+    
+  }
+}
+
+let res2 = suma(parejas: [(1,2), (2,3), (4,5), (6,7)])
+print(res2)
+
+func incrementa(valores: [Int], con: Int) -> [Int]{
+  // return valores.mapo() { $0 + con }
+  return valores.map() { (x: Int) -> Int in
+    return x + con
+  }
+  
+}
+
+let res3 = incrementa(valores: numeros, con: 10)
+print(res)
+
+
+// Filter
+
+// func filter(_ isInclouded: (Element) -> Bool) -> [Element]
+
+let res4 = numeros.filter() { $0 %2 == 0 }
+print(res4)
+
+let nombres = ["Antonio", "Jose", "Lucia", "Elena", "Alberto"]
+let o =nombres.filter() { (nombres: String)-> Bool in
+  return nombre.contains("o")
+}
+
+print(n)
+
+let m = nombres.filter() { $0.count > 5}
+print(m)
+
+
+// Reduce 
+
+// func reduce<Result>(_ initialResult: Result, _nextPartialResult: (Result, Element) -> Result) -> Result
+
+// let res5 = numeros.reduce(0, +)
+// print(0)
+
+let res5 = numeros.reduce(0, { (cont: Int, next: Int)-> Int in 
+  return x + y
+})
+print(res5)
+
+let cadenas = ["patatas", "arroz", "avena", "huevos", "Lechuga"]
+
+let res6 = cadenas.reduce(0, {(contador: Int, ingrediente: String) -> Int in 
+  ingrediente.count + contador
+})
+print(res6)
+
+// let res7 = cadenas.reduce("", { $0 + ", " + $1})
+// print(res7)
+
+let res7 = cadenas.reduce("", {(frase: String, ingrediente: String)-> String in 
+  return frase + ", " + ingrediente
+})
+print(res7)
+
+let paresAlCuadrado = numeros.filter({ $0 %2 == 0}.map({$0 * $0}))
+print(paresAlCuadrado)
+
+let n = [123,4456,672134,565655,34,81,14,2,776,324,98]
+// la suma de los elementos del array mayores de 100
+let res8 = n.filter({ $0 > 100}.reduce(0, +))
+print(res8)
+
+
+var suma: (Int, Int) -> Int = {op1, op2 in return op1 + op2}
+print(sumar(3,5))
+
+var numeross = [3,4,6]
+print( numeross.map({$0 + 1}) )
+print( numeross.sorted(by: >) )
+print( numeross.sorted(by: {$0 < $1}) )
+print( numeross.sorted(by: {$0 < $1}).map($0 * 2) )
+print( numeross.sorted(by: {$0 < $1}).filter({$0 % 2 == 0}).map({$0 * 2}) )
+print( numeross.sorted(by: {$0 < $1}).filter({$0 % 2 == 0}).map({$0 * 2}).reduce(0, +) )
+
+
+
+
+
+
+
 
 
 
