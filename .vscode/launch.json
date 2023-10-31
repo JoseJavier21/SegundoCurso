@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Ejercicio9Application",
+            "request": "launch",
+            "mainClass": "com.ejercicios.ejercicio9.Ejercicio9Application",
+            "projectName": "ejercicio9"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Iniciar Chrome para localhost",
