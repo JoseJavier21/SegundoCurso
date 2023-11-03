@@ -1509,7 +1509,23 @@ print( numeross.sorted(by: {$0 < $1}).filter({$0 % 2 == 0}).map({$0 * 2}).reduce
 
 
 
+//func intercambia(_ tupla: (Int, String)) -> (String, Int){
+//  let nuevaTupla = (tupla.1, tupla.0)
+//  return nuevaTupla
+//}
 
+
+
+// Genericos
+
+func intercambia<A,B>(_ tupla:(A, B)) -> (B, A){
+    let nuevaTupla = (tupla.1, tupla.0)
+    return nuevaTupla
+}
+
+
+let tupla = (1, "Estech")
+print(intercambia(tupla))
 
 
 

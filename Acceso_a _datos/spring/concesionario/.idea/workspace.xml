@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0e3c91-7b6e-4b44-b127-3ce83d9b68aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/ConcesionarioApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/models/Coche.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/repositorio/CocheRepositorio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/service/CocheService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cochesView.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/concesionario/ConcesionarioApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/Repositorio/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/Services/ClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/controllers/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/controllers/ClienteRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/models/Clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/ConcesionarioApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/ConcesionarioApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/repositorio/CocheRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/repositorio/CocheRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/service/CocheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/service/CocheService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/javier.rojo/Documents/GitHub/SegundoCurso/Acceso_a _datos/spring/concesionario"
+    "last_opened_file_path": "C:/Users/javier.rojo/Documents/GitHub/SegundoCurso/psp/Telecom"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
