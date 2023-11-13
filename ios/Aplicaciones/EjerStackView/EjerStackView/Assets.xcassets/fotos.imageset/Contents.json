@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Firefly un image with weight 80pt and height 100pt, a tedy bear crying alone in the snow forest 4483.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Firefly un image with weight 80pt and height 100pt, a tedy bear crying alone in the snow forest 4483@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Firefly un image with weight 80pt and height 100pt, a tedy bear crying alone in the snow forest 4483@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
