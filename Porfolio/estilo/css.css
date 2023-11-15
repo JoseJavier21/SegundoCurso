@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
 *{
     margin: 0;
+    font-family: 'Fira Code', monospace;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,11 +11,22 @@ body{
 }
 
 .menu{
+    display: flex;
     width: 100%;
     height: 74px;
     border-radius: 0px 0px 5px 5px;
     background: #4F6068;
+    align-items: center;
     box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu > img{
+    display: flex;
+    width: 74px;
+    height: 74px;
+    margin-left: 10%;
 }
 
 .btn{
@@ -20,28 +34,23 @@ body{
     display: flex;
     width: 423px;
     height: 33px;
-    justify-content: end;
+    margin: 15px;
+    align-items: center;
 }
 
-.menu > img{
-    width: 74px;
-    height: 74px;
-}
-
-#botones{
+.botones{
     display: flex;
-    width: 87px;
-    height: 30.67px;
+    width: 90px;
+    height: 32px;
     flex-direction: column;
     justify-content: center;
-    color: #F3EFE3;
-    text-align: center;
-    font-family: ;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 18.5px;
+    border-radius: 20px;
     background: #62C3CA;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.40);
+    margin-left: 10px;
+}
+
+.botones > a{
+    text-decoration: none;
+    color: #F3EFE3;
 }
