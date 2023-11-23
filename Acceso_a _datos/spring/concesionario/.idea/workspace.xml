@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0e3c91-7b6e-4b44-b127-3ce83d9b68aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/Repositorio/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/Services/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/controllers/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/controllers/ClienteRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../psp/Telecom/src/main/java/com/ejercicio/Telecom/models/Clientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/ConcesionarioApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/ConcesionarioApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/controller/CocheRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/repositorio/CocheRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/repositorio/CocheRepositorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concesionario/service/CocheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concesionario/service/CocheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing/MiPrimerViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing/PrimerViewController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing/SliderUnoaDiez.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing.xcodeproj/project.xcworkspace/xcuserdata/dam2.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing.xcodeproj/project.xcworkspace/xcuserdata/dam2.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ios/Aplicaciones/EjerCalDesing/EjerCalDesing/Base.lproj/Main.storyboard" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +55,10 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/javier.rojo/Documents/GitHub/SegundoCurso/psp/Telecom"
+    "last_opened_file_path": "/Users/dam2/Documents/GitHub/SegundoCurso/Acceso_a _datos/spring/concesionario",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +69,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697567349884</updated>
+      <workItem from="1700590980987" duration="136000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

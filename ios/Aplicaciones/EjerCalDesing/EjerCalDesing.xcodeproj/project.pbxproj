@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D296DD22B0BE6AB0039C087 /* MiPrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D296DD12B0BE6AB0039C087 /* MiPrimerViewController.swift */; };
+		3D296DD42B0BE7270039C087 /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D296DD32B0BE7270039C087 /* PrimerViewController.swift */; };
+		3D296DD62B0BF8530039C087 /* SliderUnoaDiez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D296DD52B0BF8530039C087 /* SliderUnoaDiez.swift */; };
 		3DCF52F22B06805D008138FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF52F12B06805D008138FB /* AppDelegate.swift */; };
 		3DCF52F42B06805D008138FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF52F32B06805D008138FB /* SceneDelegate.swift */; };
 		3DCF52F62B06805D008138FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF52F52B06805D008138FB /* ViewController.swift */; };
 		3DCF52F92B06805D008138FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF52F72B06805D008138FB /* Main.storyboard */; };
 		3DCF52FE2B06805D008138FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF52FC2B06805D008138FB /* LaunchScreen.storyboard */; };
 		3DCF53062B06A155008138FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF52FA2B06805D008138FB /* Assets.xcassets */; };
+		3DFD10632B0E998A001114A6 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD10622B0E998A001114A6 /* PuzzleViewController.swift */; };
+		3DFD10652B0E9B3F001114A6 /* CalculadoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD10642B0E9B3F001114A6 /* CalculadoraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D296DD12B0BE6AB0039C087 /* MiPrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiPrimerViewController.swift; sourceTree = "<group>"; };
+		3D296DD32B0BE7270039C087 /* PrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
+		3D296DD52B0BF8530039C087 /* SliderUnoaDiez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUnoaDiez.swift; sourceTree = "<group>"; };
 		3DCF52EE2B06805D008138FB /* EjerCalDesing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjerCalDesing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCF52F12B06805D008138FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DCF52F32B06805D008138FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		3DCF52FA2B06805D008138FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DCF52FD2B06805D008138FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DCF52FF2B06805D008138FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DFD10622B0E998A001114A6 /* PuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
+		3DFD10642B0E9B3F001114A6 /* CalculadoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				3DCF52F12B06805D008138FB /* AppDelegate.swift */,
 				3DCF52F32B06805D008138FB /* SceneDelegate.swift */,
+				3D296DD12B0BE6AB0039C087 /* MiPrimerViewController.swift */,
+				3D296DD32B0BE7270039C087 /* PrimerViewController.swift */,
+				3D296DD52B0BF8530039C087 /* SliderUnoaDiez.swift */,
 				3DCF52F52B06805D008138FB /* ViewController.swift */,
+				3DFD10622B0E998A001114A6 /* PuzzleViewController.swift */,
 				3DCF52F72B06805D008138FB /* Main.storyboard */,
+				3DFD10642B0E9B3F001114A6 /* CalculadoraViewController.swift */,
 				3DCF52FA2B06805D008138FB /* Assets.xcassets */,
 				3DCF52FC2B06805D008138FB /* LaunchScreen.storyboard */,
 				3DCF52FF2B06805D008138FB /* Info.plist */,
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCF52F62B06805D008138FB /* ViewController.swift in Sources */,
+				3D296DD62B0BF8530039C087 /* SliderUnoaDiez.swift in Sources */,
+				3DFD10632B0E998A001114A6 /* PuzzleViewController.swift in Sources */,
 				3DCF52F22B06805D008138FB /* AppDelegate.swift in Sources */,
+				3DFD10652B0E9B3F001114A6 /* CalculadoraViewController.swift in Sources */,
 				3DCF52F42B06805D008138FB /* SceneDelegate.swift in Sources */,
+				3D296DD42B0BE7270039C087 /* PrimerViewController.swift in Sources */,
+				3D296DD22B0BE6AB0039C087 /* MiPrimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
