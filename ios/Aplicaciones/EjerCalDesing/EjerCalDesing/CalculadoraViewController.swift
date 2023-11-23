@@ -9,17 +9,17 @@ import UIKit
 
 class CalculadoraViewController: UIViewController {
     
-    //Variables de los botones numericos
-    @IBOutlet weak var boton0: UIButton!
-    @IBOutlet weak var boton1: UIButton!
-    @IBOutlet weak var boton2: UIButton!
-    @IBOutlet weak var boton3: UIButton!
-    @IBOutlet weak var boton4: UIButton!
-    @IBOutlet weak var boton5: UIButton!
-    @IBOutlet weak var boton6: UIButton!
-    @IBOutlet weak var boton7: UIButton!
-    @IBOutlet weak var boton8: UIButton!
-    @IBOutlet weak var boton9: UIButton!
+
+    // Variables de la operaciones
+    @IBOutlet weak var borrarUno: UIButton!
+    @IBOutlet weak var resta: UIButton!
+    @IBOutlet weak var suma: UIButton!
+    @IBOutlet weak var multi: UIButton!
+    @IBOutlet weak var divi: UIButton!
+    @IBOutlet weak var porce: UIButton!
+    @IBOutlet weak var parentesis: UIButton!
+    @IBOutlet weak var borrarTodo: UIButton!
+    
     
     // Label
     @IBOutlet weak var resultadoLabel: UILabel!
@@ -27,25 +27,33 @@ class CalculadoraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    @IBAction func operaciones(_ sender: Any) {
         
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func operaciones(_ sender: UIButton) {
+        
+        let botones = sender.titleLabel?.text?.lowercased()
+        var textoLabel = resultadoLabel.text!
+        
+        if botones == "AC"{
+            resultadoLabel.text = ""
+        }else if resultadoLabel.text != ""{
+            resultadoLabel.text = (resultadoLabel.text!) + botones!
+        }else{
+            resultadoLabel.text = botones!
+        }
+        
+        switch botones{
+        case "AC": resultadoLabel.text = ""
+        case "0": resultadoLabel.text = botones
+            
+        default: resultadoLabel.text = "error"
+        }
+        
+        
     }
-    */
+    
 
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0A34CB2B0FBB2B000CAE40 /* Datos1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A34CA2B0FBB2B000CAE40 /* Datos1ViewController.swift */; };
+		3D0A34CD2B0FBB37000CAE40 /* Datos2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A34CC2B0FBB37000CAE40 /* Datos2ViewController.swift */; };
 		3D296DD22B0BE6AB0039C087 /* MiPrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D296DD12B0BE6AB0039C087 /* MiPrimerViewController.swift */; };
 		3D296DD42B0BE7270039C087 /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D296DD32B0BE7270039C087 /* PrimerViewController.swift */; };
 		3D296DD62B0BF8530039C087 /* SliderUnoaDiez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D296DD52B0BF8530039C087 /* SliderUnoaDiez.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0A34CA2B0FBB2B000CAE40 /* Datos1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos1ViewController.swift; sourceTree = "<group>"; };
+		3D0A34CC2B0FBB37000CAE40 /* Datos2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos2ViewController.swift; sourceTree = "<group>"; };
 		3D296DD12B0BE6AB0039C087 /* MiPrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiPrimerViewController.swift; sourceTree = "<group>"; };
 		3D296DD32B0BE7270039C087 /* PrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
 		3D296DD52B0BF8530039C087 /* SliderUnoaDiez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUnoaDiez.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				3DCF52F52B06805D008138FB /* ViewController.swift */,
 				3DFD10622B0E998A001114A6 /* PuzzleViewController.swift */,
 				3DCF52F72B06805D008138FB /* Main.storyboard */,
+				3D0A34CC2B0FBB37000CAE40 /* Datos2ViewController.swift */,
+				3D0A34CA2B0FBB2B000CAE40 /* Datos1ViewController.swift */,
 				3DFD10642B0E9B3F001114A6 /* CalculadoraViewController.swift */,
 				3DCF52FA2B06805D008138FB /* Assets.xcassets */,
 				3DCF52FC2B06805D008138FB /* LaunchScreen.storyboard */,
@@ -153,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0A34CB2B0FBB2B000CAE40 /* Datos1ViewController.swift in Sources */,
 				3DCF52F62B06805D008138FB /* ViewController.swift in Sources */,
 				3D296DD62B0BF8530039C087 /* SliderUnoaDiez.swift in Sources */,
+				3D0A34CD2B0FBB37000CAE40 /* Datos2ViewController.swift in Sources */,
 				3DFD10632B0E998A001114A6 /* PuzzleViewController.swift in Sources */,
 				3DCF52F22B06805D008138FB /* AppDelegate.swift in Sources */,
 				3DFD10652B0E9B3F001114A6 /* CalculadoraViewController.swift in Sources */,
