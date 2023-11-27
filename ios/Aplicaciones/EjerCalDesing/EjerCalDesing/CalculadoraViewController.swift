@@ -35,7 +35,7 @@ class CalculadoraViewController: UIViewController {
     @IBAction func operaciones(_ sender: UIButton) {
         
         let botones = sender.titleLabel?.text?.lowercased()
-        var textoLabel = resultadoLabel.text!
+        //var textoLabel = resultadoLabel.text!
         
         if botones == "AC"{
             resultadoLabel.text = ""
@@ -47,7 +47,7 @@ class CalculadoraViewController: UIViewController {
         
         switch botones{
         case "AC": resultadoLabel.text = ""
-        case "0": resultadoLabel.text = botones
+        //case "0": resultadoLabel.text = botones
             
         default: resultadoLabel.text = "error"
         }
