@@ -94,7 +94,7 @@
                                                             <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="HRs-qP-BjD"/>
+                                                            <action selector="borrarTodo:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="JUN-sG-vjV"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdt-dp-7kc">
@@ -104,9 +104,6 @@
                                                         <buttonConfiguration key="configuration" style="tinted" title="(  )" cornerStyle="capsule">
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="Rr2-Ve-nPk"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOw-YA-0RX">
                                                         <rect key="frame" x="186" y="0.0" width="88" height="81.5"/>
@@ -115,20 +112,17 @@
                                                         <buttonConfiguration key="configuration" style="tinted" title="%" cornerStyle="capsule">
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="th2-ix-opR"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMX-N3-Vld">
                                                         <rect key="frame" x="279" y="0.0" width="88" height="81.5"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="÷" cornerStyle="capsule">
+                                                        <buttonConfiguration key="configuration" style="tinted" title="/" cornerStyle="capsule">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="aoa-rr-asp"/>
+                                                            <action selector="divi:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="Qb9-ST-NJA"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -145,7 +139,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="Mxy-eo-8m2"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="SOj-Vz-pgp"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epI-zY-5aA">
@@ -157,7 +151,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="pqO-oL-VzS"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="0cf-kl-PIW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGe-7I-kBF">
@@ -169,7 +163,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="O9s-ak-2Lg"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="CHB-n6-6BI"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="343-jg-PgR">
@@ -181,7 +175,7 @@
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="o8v-Ly-CPp"/>
+                                                            <action selector="multi:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="9CG-VB-sF8"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -198,7 +192,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="2hv-Hp-mFp"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="XSh-e0-7g2"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zny-zL-vDe">
@@ -210,7 +204,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="E6e-Sl-N6j"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="qys-yY-GI0"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bc-7p-J9Z">
@@ -222,19 +216,19 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="OU0-wS-LxZ"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="hoR-z1-wOb"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StE-eE-bpd">
                                                         <rect key="frame" x="279" y="0.0" width="88" height="82"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" title="－" cornerStyle="capsule">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="-" cornerStyle="capsule">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="0zx-jJ-Z3e"/>
+                                                            <action selector="resta:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="vid-qh-4Us"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -251,7 +245,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="UKu-cM-ld9"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="Kyv-ca-Z8P"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfF-b9-3gY">
@@ -263,7 +257,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="6hP-qZ-LBC"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="Rq8-VR-S6a"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl3-2m-hme">
@@ -275,7 +269,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="zJ3-QR-HYy"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="qj5-Z1-86x"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzr-Tk-a7K">
@@ -287,7 +281,7 @@
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="wZg-C1-xCm"/>
+                                                            <action selector="suma:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="vTo-cd-Mez"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -304,7 +298,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="E2G-ss-adf"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="xZM-o4-oT5"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJv-SQ-JVo">
@@ -317,7 +311,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="uRy-7T-yhD"/>
+                                                            <action selector="addButNum:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="XQ8-7V-YCm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuL-6p-wSJ">
@@ -329,9 +323,6 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="qUn-z6-voz"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOE-if-XOE">
                                                         <rect key="frame" x="279" y="0.0" width="88" height="81.5"/>
@@ -341,7 +332,7 @@
                                                             <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="operaciones:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="ANF-MR-4gA"/>
+                                                            <action selector="igual:" destination="kPL-Tc-Psm" eventType="touchUpInside" id="Ure-Ka-2J3"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -358,7 +349,7 @@
                                     <constraint firstAttribute="bottom" secondItem="yjn-tp-FeA" secondAttribute="bottom" constant="4" id="t8z-ud-Jdi"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGO-it-gAd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGO-it-gAd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="125"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -385,25 +376,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="X8g-FK-MO1"/>
                     <connections>
-                        <outlet property="borrarTodo" destination="UqP-cI-wra" id="Ce9-Da-d0o"/>
-                        <outlet property="borrarUno" destination="SuL-6p-wSJ" id="M4A-uU-Hoz"/>
-                        <outlet property="boton0" destination="LQk-bf-w0e" id="KO9-oi-U3S"/>
-                        <outlet property="boton1" destination="TOw-YA-0RX" id="Hcb-18-7MO"/>
-                        <outlet property="boton2" destination="bfF-b9-3gY" id="Kez-Ej-8Jn"/>
-                        <outlet property="boton3" destination="wl3-2m-hme" id="SAv-2Z-sEt"/>
-                        <outlet property="boton4" destination="AL5-zS-8Iw" id="YL5-Gd-uVC"/>
-                        <outlet property="boton5" destination="Zny-zL-vDe" id="eBJ-qF-efz"/>
-                        <outlet property="boton6" destination="9Bc-7p-J9Z" id="YZ0-aI-1l8"/>
-                        <outlet property="boton7" destination="3SU-VA-JSd" id="8A5-Cz-BKe"/>
-                        <outlet property="boton8" destination="epI-zY-5aA" id="Bqx-Pg-pQd"/>
-                        <outlet property="boton9" destination="IGe-7I-kBF" id="6Ab-l5-BgO"/>
-                        <outlet property="divi" destination="zMX-N3-Vld" id="waf-Bg-mJI"/>
-                        <outlet property="multi" destination="343-jg-PgR" id="FCG-1g-YWK"/>
-                        <outlet property="parentesis" destination="Pdt-dp-7kc" id="Ds8-15-Use"/>
-                        <outlet property="porce" destination="TOw-YA-0RX" id="Wvz-iI-Kvj"/>
-                        <outlet property="resta" destination="StE-eE-bpd" id="0Lr-BO-raF"/>
                         <outlet property="resultadoLabel" destination="iGO-it-gAd" id="Oel-Bl-GVq"/>
-                        <outlet property="suma" destination="Gzr-Tk-a7K" id="ELS-eS-Ba2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcL-A0-qaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1009,25 +982,25 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

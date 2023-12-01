@@ -1,0 +1,17 @@
+<div class="form_container">
+
+    <form>
+
+        <input type="text" name="texto" [(ngModel)] = "texto" placeholder="Texto" autocomplete="off">
+
+        <div class="btn_container">
+            <button class="verde boton" (click)="setVerde()">Verde</button>
+            <button class="azul boton" (click)="setAzul()">Azul</button>
+            <button class="rojo boton" (click)="setRojo()">Rojo</button>
+        </div>
+
+        <h2 [style.color] = "color">{{texto}}</h2>
+
+    </form>
+
+</div>
