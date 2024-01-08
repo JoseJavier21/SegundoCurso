@@ -1,0 +1,28 @@
+<div class="table_container">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let contacto of data">
+                <td>{{ contacto.nombre }}</td>
+                <td>{{ contacto.apellido }}</td>
+                <td>{{ contacto.telefono }}</td>
+                <td>
+                    <button class="btn eliminar" (click)="deleteContact(contacto.id)">Eliminar</button>
+                </td>
+                <td>
+                    <button class="btn editar" (click)="updateContact(contacto.id)">Editar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

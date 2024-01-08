@@ -1,0 +1,10 @@
+<h2>Editar Contacto</h2>
+
+<form [formGroup]="form">
+
+    <input type="text" formControlName= nombre name="nombre" placeholder="Nombre" autocomplete="off">
+    <input type="text" formControlName= apellido name="apellido" placeholder="Apellido" autocomplete="off">
+    <input type="text" formControlName= telefono name="telefono" placeholder="Telefono" autocomplete="off">
+    <input type="hidden" name = "id", formControlName= id>
+    <button type="submit">Enviar / Actualizar Contacto</button>
+</form>

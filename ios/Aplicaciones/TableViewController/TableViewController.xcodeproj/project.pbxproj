@@ -11,8 +11,9 @@
 		3D42C1C32B1E3A0B00DFBD11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C1C22B1E3A0B00DFBD11 /* SceneDelegate.swift */; };
 		3D42C1C52B1E3A0B00DFBD11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C1C42B1E3A0B00DFBD11 /* ViewController.swift */; };
 		3D42C1C82B1E3A0B00DFBD11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42C1C62B1E3A0B00DFBD11 /* Main.storyboard */; };
-		3D42C1CA2B1E3A0C00DFBD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D42C1C92B1E3A0C00DFBD11 /* Assets.xcassets */; };
 		3D42C1CD2B1E3A0C00DFBD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42C1CB2B1E3A0C00DFBD11 /* LaunchScreen.storyboard */; };
+		3D5B65A82B1F8F0100F15DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B65A72B1F8F0100F15DED /* Assets.xcassets */; };
+		3D5B65AC2B1F91A300F15DED /* MiCeldaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B65AB2B1F91A300F15DED /* MiCeldaTableViewCell.swift */; };
 		3DD078482B1E434B00113FB2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD078472B1E434B00113FB2 /* TableViewController.swift */; };
 		3DD0784A2B1E465500113FB2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD078492B1E465500113FB2 /* Cell.swift */; };
 /* End PBXBuildFile section */
@@ -23,9 +24,10 @@
 		3D42C1C22B1E3A0B00DFBD11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D42C1C42B1E3A0B00DFBD11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D42C1C72B1E3A0B00DFBD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D42C1C92B1E3A0C00DFBD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D42C1CC2B1E3A0C00DFBD11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D42C1CE2B1E3A0C00DFBD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5B65A72B1F8F0100F15DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
+		3D5B65AB2B1F91A300F15DED /* MiCeldaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCeldaTableViewCell.swift; sourceTree = "<group>"; };
 		3DD078472B1E434B00113FB2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3DD078492B1E465500113FB2 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +68,8 @@
 				3DD078472B1E434B00113FB2 /* TableViewController.swift */,
 				3DD078492B1E465500113FB2 /* Cell.swift */,
 				3D42C1C62B1E3A0B00DFBD11 /* Main.storyboard */,
-				3D42C1C92B1E3A0C00DFBD11 /* Assets.xcassets */,
+				3D5B65AB2B1F91A300F15DED /* MiCeldaTableViewCell.swift */,
+				3D5B65A72B1F8F0100F15DED /* Assets.xcassets */,
 				3D42C1CB2B1E3A0C00DFBD11 /* LaunchScreen.storyboard */,
 				3D42C1CE2B1E3A0C00DFBD11 /* Info.plist */,
 			);
@@ -132,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D42C1CD2B1E3A0C00DFBD11 /* LaunchScreen.storyboard in Resources */,
-				3D42C1CA2B1E3A0C00DFBD11 /* Assets.xcassets in Resources */,
+				3D5B65A82B1F8F0100F15DED /* Assets.xcassets in Resources */,
 				3D42C1C82B1E3A0B00DFBD11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD0784A2B1E465500113FB2 /* Cell.swift in Sources */,
+				3D5B65AC2B1F91A300F15DED /* MiCeldaTableViewCell.swift in Sources */,
 				3D42C1C52B1E3A0B00DFBD11 /* ViewController.swift in Sources */,
 				3D42C1C12B1E3A0B00DFBD11 /* AppDelegate.swift in Sources */,
 				3D42C1C32B1E3A0B00DFBD11 /* SceneDelegate.swift in Sources */,

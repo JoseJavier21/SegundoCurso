@@ -103,8 +103,6 @@ class ViewController: UIViewController {
             
         }.resume()
         
-        
-        
     }
     
     

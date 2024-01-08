@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPT-pT-kP7">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -209,6 +209,57 @@
             </objects>
             <point key="canvasLocation" x="20" y="-16.641679160419791"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FUN-cL-gcu">
+            <objects>
+                <viewController id="GPT-pT-kP7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k7p-kN-jdl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVf-S3-tVC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8am-Ym-N5P">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="texto de ejepmlo para ver si funcona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAU-KM-urE">
+                                                <rect key="frame" x="32" y="36" width="157" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8am-Ym-N5P" firstAttribute="width" secondItem="Icm-cb-T1O" secondAttribute="width" id="044-0S-iEh"/>
+                                    <constraint firstItem="8am-Ym-N5P" firstAttribute="top" secondItem="LLQ-wy-hCb" secondAttribute="top" id="U3o-fj-mHi"/>
+                                    <constraint firstItem="8am-Ym-N5P" firstAttribute="bottom" secondItem="LLQ-wy-hCb" secondAttribute="bottom" id="gtg-A5-BCs"/>
+                                    <constraint firstItem="8am-Ym-N5P" firstAttribute="trailing" secondItem="LLQ-wy-hCb" secondAttribute="trailing" id="lPQ-Rk-Ytq"/>
+                                    <constraint firstItem="8am-Ym-N5P" firstAttribute="leading" secondItem="LLQ-wy-hCb" secondAttribute="leading" id="nL2-Gy-yL4"/>
+                                    <constraint firstItem="8am-Ym-N5P" firstAttribute="height" secondItem="Icm-cb-T1O" secondAttribute="height" priority="750" id="s4T-Df-bmP"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="LLQ-wy-hCb"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Icm-cb-T1O"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9dI-KY-Jl8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TVf-S3-tVC" firstAttribute="trailing" secondItem="9dI-KY-Jl8" secondAttribute="trailing" id="825-79-2ch"/>
+                            <constraint firstItem="TVf-S3-tVC" firstAttribute="leading" secondItem="9dI-KY-Jl8" secondAttribute="leading" id="C6M-oa-fkO"/>
+                            <constraint firstItem="TVf-S3-tVC" firstAttribute="top" secondItem="k7p-kN-jdl" secondAttribute="top" id="eEM-hx-P1G"/>
+                            <constraint firstItem="TVf-S3-tVC" firstAttribute="bottom" secondItem="9dI-KY-Jl8" secondAttribute="bottom" id="qux-2K-O4A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoV-Ef-2gc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525.5999999999999" y="-17.541229385307346"/>
+        </scene>
     </scenes>
     <resources>
         <image name="alumnos" width="665" height="443"/>
@@ -221,6 +272,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
