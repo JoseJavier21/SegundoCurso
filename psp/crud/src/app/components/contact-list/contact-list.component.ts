@@ -40,10 +40,9 @@ export class ContactListComponent {
     })
   }
 
-  updateContact(id:string): void{
+  updateContact(id:string){
     sessionStorage.setItem('id', id)
     this.router.navigate(['/update'])
-    
   }
 
 }

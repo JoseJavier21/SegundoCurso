@@ -9,9 +9,9 @@ import { UpdateComponent } from './components/update/update.component';
 const routes: Routes = [
   {path:'save', component: SaveComponent, title: 'save'},
   {path: 'contact-list', component: ContactListComponent, title: 'contactoLista'},
-  {path: 'error', component: ContactListComponent, title: 'error'},
+  {path: 'error', component: ErrorComponent, title: 'error'},
   {path: 'update', component: UpdateComponent, title: 'update'},
-  {path: '', component: ErrorComponent, title: 'home'},
+  //{path: 'home', component: ErrorComponent, title: 'home'},
   {path: '**', pathMatch: 'full', redirectTo: ''},
 ];
 

@@ -25,8 +25,12 @@ export class ContactService {
     return this.http.delete(this.BASE_URL + '/' + id)
   }
 
-  showContactoById(id: string): Observable<Contact>{
+  showContactoById(id: string): Observable<any>{
     return this.http.get<Contact>(this.BASE_URL + '/by-id/' + id)
+  }
+
+  updateContact(id: number, contact: Number): Observable<any>{
+    return this.http.put<any>(this.BASE_URL + 'id' + id ,contact, {headers: this.httpHeaders})
   }
 }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Form, FormBuilder, FormGroup } from '@angular/forms';
+import { Route, Router } from '@angular/router';
 import { ContactService } from 'src/app/services/contact.service';
 
 @Component({
@@ -17,12 +18,12 @@ export class UpdateComponent {
     
   }
 
-  constructor(private formBuilder: FormBuilder, private contactoService: ContactService){
+  constructor(private formBuilder: FormBuilder, private contactoService: ContactService, private router: Router){
     this.form = formBuilder.group({
       nombre : [''],
       apellido: [''],
       telefono : [''],
-      if : [''],
+      id : [''],
     })
   }
 
@@ -36,6 +37,12 @@ export class UpdateComponent {
       this.contactoService.showContactoById(id).subscribe({
         next : res =>{
           console.log(res);
+          this.form.patchValue({
+            nombre : res.success.nombre,
+            apellido : res.success.apelldio,
+            telefono : res.success.telefono,
+            id : res.succes.id,
+          })
         },
         error: error =>{
           console.log(error);
@@ -43,9 +50,23 @@ export class UpdateComponent {
       });
     }
 
-
-
   }
 
+  update(){
+    console.log('updating ...')
+    console.log(this.form.value)
 
+    this.contactoService.updateContact(this.form.value, Number(sessionStorage.getItem("id"))).subscribe({
+      next: res => {
+        console.log(res)
+        this.router.navigate(['/contact-list'])
+      },
+      error : err => {
+        console.log(err)
+        this.router.navigate(['/error'])
+      }
+    }
+    )
+    
+  }
 }
