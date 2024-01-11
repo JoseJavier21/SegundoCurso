@@ -119,22 +119,27 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
 
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-            let addToFavoritesAction = UIContextualAction(style: .normal, title: "Favoritos") { [weak self] (_, _, completionHandler) in
-                self?.addToFavorites(at: indexPath)
-                completionHandler(true)
-            }
-            
-            addToFavoritesAction.backgroundColor = .systemBlue
-            
-            return UISwipeActionsConfiguration(actions: [addToFavoritesAction])
-        }
-        
-    func addToFavorites(at indexPath: IndexPath) {
-        let selectEpisodio = infoPersonaje.episode[indexPath.row]
-        
-        
+        let swipeFavorite =  UIContextualAction(style: .normal, title: "favorito", handler: { (action,view,completionHandler ) in
                 
-        self.episodios.reloadData()
+                //Instanciamos el Storyboard
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                
+                //Instanciamos el ViewController
+                let ViewDestination = storyBoard.instantiateViewController(withIdentifier: "listaPersonajes") as! ViewController
+                print("se ha vuelto a la pantalla principal")
+                //ViewDestination.infoPersonaje = personajes[indexPath.item]
+            
+                //Presentamos el nuevo ViewController
+                self.present(ViewDestination, animated: true)
+            
+                completionHandler(true)
+        })
+        
+        
+        swipeFavorite.backgroundColor = .lightGray
+        
+        return UISwipeActionsConfiguration(actions: [swipeFavorite])
+        
     }
     
 }
