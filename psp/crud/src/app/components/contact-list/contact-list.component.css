@@ -1,0 +1,30 @@
+.tabla_container{
+    width: 90vw;
+    margin: 20px auto;
+}
+
+table{
+    margin: 0% auto;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 10px;
+    text-align: center;
+}
+
+tr, td{
+    padding: 10px;
+    text-align: justify;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+.eliminar{
+    background-color: rgb(189, 76, 76);
+    color: white;
+}

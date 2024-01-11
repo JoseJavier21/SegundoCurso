@@ -1528,6 +1528,143 @@ let tupla = (1, "Estech")
 print(intercambia(tupla))
 
 
+import UIKit
+
+//let data = """
+//{
+//    "identifier": "1234567",
+//    "user":{
+//        "name": "Estech",
+//        "age": 30
+//    },
+//    "job": {
+//        "name": "Sofware Enginner",
+//        "description": "Knwodge swoft, SwoftUI, IoKIt, etc."
+//    }
+//}
+//""".data(using: .utf8)!
+
+//struct Job: Codable{
+//    let name: String
+//    let description: String
+//}
+//
+//
+//struct Curriculum: Codable{
+//    
+//    var identifier: String
+//    var user: User
+//    var job: Job
+//}
+//let cur = try? JSONDecoder().decode(Curriculum.self, from: data)
+//print((cur?.user.name ??  "") + "tiene \(cur?.user.age ?? 0) años y trabaja de \(cur!.job.name)")
+
+
+//let data = """
+//{
+//    "name_of_user": "Estech",
+//    "age": 30
+//}
+//""".data(using: .utf8)!
+//
+//
+//struct User: Codable{
+//    let name: String
+//    let age: Int
+//    
+//    enum CodingKeys: String, CodingKey{ // para renombrar la variable que venga del json y se haga llamar igual que esta puesta en la estructura
+//        case name = "name_of_user"
+//        case age
+//    }
+//    
+//}
+//
+//extension User {
+//    init(from decoder: Decoder) throws {
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        self.name = try container.decode(String.self, forKey: .name)
+//        self.age = try container.decode(Int.self, forKey: .age)
+//    }
+//}
+//
+//
+//
+//let user = try? JSONDecoder().decode(User.self, from: data)
+//
+//print((user?.name ??  "") + " tiene \(user?.age ?? 0) años")
+
+//let data = """
+//[
+//{
+//    "name_of_user": "Estech",
+//    "age": 30
+//},
+//{
+//    "name_of_user": "Andrea",
+//    "age": 23
+//},
+//{
+//    "name_of_user": "Julio",
+//    "age": 20
+//},
+//]
+//""".data(using: .utf8)!
+//
+//struct User: Codable{
+//    let name: String
+//    let age: Int
+//
+//    enum CodingKeys: String, CodingKey{ // para renombrar la variable que venga del json y se haga llamar igual que esta puesta en la estructura
+//        case name = "name_of_user"
+//        case age
+//    }
+//
+//}
+//
+//extension User {
+//    init(from decoder: Decoder) throws {
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        self.name = try container.decode(String.self, forKey: .name)
+//        self.age = try container.decode(Int.self, forKey: .age)
+//    }
+//}
+//
+//
+//let user:[User] = try JSONDecoder().decode([User].self, from: data)
+//
+//user.forEach { user in
+//    print((user.name) + " tiene \(user.age) años")
+//}
+
+
+let data = """
+{
+    "type_vehicle": "Car",
+    "num_doors": 4
+}
+""".data(using: .utf8)!
+
+
+struct Vehicle: Decodable{
+    let typeVehicle: String
+    let numDoors: Int
+}
+
+//keyDecodingStrategy
+/*
+dateDecodingStrategy
+dataDecodingStrategy
+nonConforfingFloatDecodingStrategy
+convertFromSnakeCase
+*/
+
+let jsonDecoder = JSONDecoder()
+
+jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+
+let vehicle = try jsonDecoder.decode(Vehicle.self, from: data)
+print("Es un vehiculo de tipo \(vehicle.typeVehicle) con \(vehicle.numDoors) puertas")
+
 
 
 

@@ -1,0 +1,11 @@
+<h2>Añadir Contacto</h2>
+
+<form (submit)="getForm()" [formGroup]="form">
+
+    <input type="text" formControlName= nombre name="nombre" placeholder="Nombre" autocomplete="off">
+    <input type="text" formControlName= apellido name="apellido" placeholder="Apellido" autocomplete="off">
+    <input type="text" formControlName= telefono name="telefono" placeholder="Telefono" autocomplete="off">
+
+
+    <button type="submit">Enviar / REgistar Contacto</button>
+</form>

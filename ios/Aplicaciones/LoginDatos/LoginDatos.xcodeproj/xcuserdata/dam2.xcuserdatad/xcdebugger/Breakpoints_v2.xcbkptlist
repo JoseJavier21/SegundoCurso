@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "175A4E09-66E4-40C9-8C2F-9D1E934CA26B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FDD5C71-B62C-426C-AFDB-FF77FA802BB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginDatos/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "botonLogin(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FDD5C71-B62C-426C-AFDB-FF77FA802BB2 - 6b5a47b44ecc9877"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginDatos.LoginViewController.envioDatos() -&gt; ()"
+                  moduleName = "LoginDatos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dam2/Documents/GitHub/SegundoCurso/ios/Aplicaciones/LoginDatos/LoginDatos/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "8FDD5C71-B62C-426C-AFDB-FF77FA802BB2 - c2a2b13b00414138"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginDatos.LoginViewController.botonLogin(Any) -&gt; ()"
+                  moduleName = "LoginDatos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dam2/Documents/GitHub/SegundoCurso/ios/Aplicaciones/LoginDatos/LoginDatos/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1268">
+               </Location>
+               <Location
+                  uuid = "8FDD5C71-B62C-426C-AFDB-FF77FA802BB2 - c2a2b13b00414138"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginDatos.LoginViewController.botonLogin(Any) -&gt; ()"
+                  moduleName = "LoginDatos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dam2/Documents/GitHub/SegundoCurso/ios/Aplicaciones/LoginDatos/LoginDatos/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

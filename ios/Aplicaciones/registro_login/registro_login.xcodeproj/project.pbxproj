@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DA379F22B1A749400288389 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA379F12B1A749400288389 /* LoginViewController.swift */; };
 		3DB00ED62AFC0066007D7FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB00ED52AFC0066007D7FB6 /* AppDelegate.swift */; };
 		3DB00ED82AFC0066007D7FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB00ED72AFC0066007D7FB6 /* SceneDelegate.swift */; };
 		3DB00EDA2AFC0066007D7FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB00ED92AFC0066007D7FB6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DA379F12B1A749400288389 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DB00ED22AFC0066007D7FB6 /* registro_login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = registro_login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB00ED52AFC0066007D7FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DB00ED72AFC0066007D7FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		3DB00ED42AFC0066007D7FB6 /* registro_login */ = {
 			isa = PBXGroup;
 			children = (
+				3DA379F12B1A749400288389 /* LoginViewController.swift */,
 				3DB00ED52AFC0066007D7FB6 /* AppDelegate.swift */,
 				3DB00ED72AFC0066007D7FB6 /* SceneDelegate.swift */,
 				3DB00ED92AFC0066007D7FB6 /* ViewController.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA379F22B1A749400288389 /* LoginViewController.swift in Sources */,
 				3DB00EDA2AFC0066007D7FB6 /* ViewController.swift in Sources */,
 				3DB00ED62AFC0066007D7FB6 /* AppDelegate.swift in Sources */,
 				3DB00ED82AFC0066007D7FB6 /* SceneDelegate.swift in Sources */,
