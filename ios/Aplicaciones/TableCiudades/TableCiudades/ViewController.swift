@@ -40,7 +40,6 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         searchController.searchBar.placeholder = "Buscar Ciudad"
         
         //añadir el searchBar al navigationItem
-        
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }

@@ -44,7 +44,6 @@
 		3D5B65AD2B1F923C00F15DED = {
 			isa = PBXGroup;
 			children = (
-				3D5B65D12B1FA14400F15DED /* SegundoViewController.swift */,
 				3D5B65B82B1F923C00F15DED /* TableCiudades */,
 				3D5B65B72B1F923C00F15DED /* Products */,
 			);
@@ -61,6 +60,7 @@
 		3D5B65B82B1F923C00F15DED /* TableCiudades */ = {
 			isa = PBXGroup;
 			children = (
+				3D5B65D12B1FA14400F15DED /* SegundoViewController.swift */,
 				3D5B65B92B1F923C00F15DED /* AppDelegate.swift */,
 				3D5B65BB2B1F923C00F15DED /* SceneDelegate.swift */,
 				3D5B65BD2B1F923C00F15DED /* ViewController.swift */,

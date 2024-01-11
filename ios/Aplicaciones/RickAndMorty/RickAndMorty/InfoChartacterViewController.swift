@@ -12,11 +12,10 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
 
     
     var idPersonaje: Int!
-    
     var infoPersonaje: PersonajeModel!
     
-    
     @IBOutlet weak var constainsaltoTable: NSLayoutConstraint!
+    
     // Datos del Personaje
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var especie: UILabel!
@@ -35,15 +34,13 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
         tabla.dataSource = self
         tabla.delegate = self
         peticionApi()
-        constainsaltoTable.constant = CGFloat(infoPersonaje.episode.count * 44)
+        //constainsaltoTable.constant = CGFloat(infoPersonaje.episode.count * 44)
     }
     
 
     
     func peticionApi(){
-        
-        //print(idPersonaje!)
-        //print(infoPersonaje)
+
         let urlString = "https://rickandmortyapi.com/api/character"
         
         
@@ -65,9 +62,8 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
                 self.personajes = respuesta.results
                 //print(respuesta)
                 
-                //print(infoPersonaje)
-                print(infoPersonaje.episode)
-            
+                //print(infoPersonaje.episode)
+                
                 DispatchQueue.main.async{ [self] in
                     
                         
@@ -89,22 +85,11 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
                     }
                     dataTask.resume()
                         
-                    
-                    
                 }
  
             }catch{
                 print("No funciona", error)
             }
-            
-//            if personajes != nil {
-//                self.personajes = personajes
-//                DispatchQueue.main.async{
-//                   
-//                }
-//            }else {
-//                print("Se ha producido un error en los datos")
-//            }
             
         }.resume()
     }
@@ -113,7 +98,7 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
     // CODIGO PARA LOS DATOS DE LA TABLA - QUE MUESTRE LOS EISODIOS
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(infoPersonaje.episode.count)
+        //print(infoPersonaje.episode.count)
         return infoPersonaje.episode.count
     }
     
@@ -121,8 +106,35 @@ class InfoChartacterViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let celda =  tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-        celda.textLabel?.text = infoPersonaje.episode[indexPath.row]
+        
+        if let urlString = infoPersonaje.episode[indexPath.row].split(separator: "/").last{
+            let episodioRecortado = String(urlString)
+            celda.textLabel?.text = "Episodio: \(episodioRecortado)"
+        }else {
+            celda.textLabel?.text = infoPersonaje.episode[indexPath.row]
+        }
+        
         return celda
     }
 
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+            let addToFavoritesAction = UIContextualAction(style: .normal, title: "Favoritos") { [weak self] (_, _, completionHandler) in
+                self?.addToFavorites(at: indexPath)
+                completionHandler(true)
+            }
+            
+            addToFavoritesAction.backgroundColor = .systemBlue
+            
+            return UISwipeActionsConfiguration(actions: [addToFavoritesAction])
+        }
+        
+    func addToFavorites(at indexPath: IndexPath) {
+        let selectEpisodio = infoPersonaje.episode[indexPath.row]
+        
+        
+                
+        self.episodios.reloadData()
+    }
+    
 }
