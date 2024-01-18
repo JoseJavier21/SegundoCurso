@@ -14,6 +14,7 @@
 		3D9743D92B598DB200B861CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9743D82B598DB200B861CF /* Assets.xcassets */; };
 		3D9743DC2B598DB200B861CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9743DA2B598DB200B861CF /* LaunchScreen.storyboard */; };
 		3D9743E42B59923700B861CF /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9743E32B59923700B861CF /* ArtWork.swift */; };
+		3D9743E72B59A28300B861CF /* CLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9743E62B59A28300B861CF /* CLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3D9743DD2B598DB200B861CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D9743E32B59923700B861CF /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		3D9743E52B599D2400B861CF /* waypointLinares.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = waypointLinares.gpx; sourceTree = "<group>"; };
+		3D9743E62B59A28300B861CF /* CLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3D9743D12B598DB100B861CF /* SceneDelegate.swift */,
 				3D9743D32B598DB100B861CF /* ViewController.swift */,
 				3D9743E32B59923700B861CF /* ArtWork.swift */,
+				3D9743E62B59A28300B861CF /* CLocation.swift */,
 				3D9743D52B598DB100B861CF /* Main.storyboard */,
 				3D9743D82B598DB200B861CF /* Assets.xcassets */,
 				3D9743DA2B598DB200B861CF /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				3D9743D42B598DB100B861CF /* ViewController.swift in Sources */,
 				3D9743D02B598DB100B861CF /* AppDelegate.swift in Sources */,
 				3D9743E42B59923700B861CF /* ArtWork.swift in Sources */,
+				3D9743E72B59A28300B861CF /* CLocation.swift in Sources */,
 				3D9743D22B598DB100B861CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +304,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = interaccionMapas/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "La aplicacion te preguntare sobre la ubicacioon y eligue lo que tu quieras";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Necesitamos conocer tu ubicacion";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -327,6 +333,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = interaccionMapas/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "La aplicacion te preguntare sobre la ubicacioon y eligue lo que tu quieras";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Necesitamos conocer tu ubicacion";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
