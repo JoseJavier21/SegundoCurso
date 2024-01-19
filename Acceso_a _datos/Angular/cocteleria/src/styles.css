@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.nav{
+    border-bottom: 2px solid rgb(57, 57, 57);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav > a{
+    text-decoration: none;
+}
