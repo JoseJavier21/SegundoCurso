@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FR6-Ya-2Og"; */
+"FR6-Ya-2Og.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q6j-ze-bXV"; */
+"q6j-ze-bXV.text" = "Your name";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "qmR-Jw-gPG"; */
+"qmR-Jw-gPG.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qmR-Jw-gPG"; */
+"qmR-Jw-gPG.normalTitle" = "Next";

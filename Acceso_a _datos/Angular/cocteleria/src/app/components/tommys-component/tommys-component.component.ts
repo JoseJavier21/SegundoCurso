@@ -10,23 +10,23 @@ import { CoctelServiceService } from 'src/app/services/coctel-service.service';
 export class TommysComponentComponent {
 
   coctelArr: Coctel = {
-    strDrink: '',
-    strDrinkThumb: '',
-    strIngredient1: '',
-    strIngredient2: '',
-    strIngredient3: '',
-    strIngredient4: '',
-    strInstrctionsIT: ''
-  }
+      strDrink: '',
+      strDrinkThumb: '',
+      strIngredient1: '',
+      strIngredient2: '',
+      strIngredient3: '',
+      strIngredient4: '',
+      strInstrctionsIT: ''
+    }  
 
   constructor(private coctelService: CoctelServiceService){}
 
   ngOnInit(): void {
 
-    this.coctelService.getCoctel("blue margarita").subscribe({
+    this.coctelService.getCoctel("tommy").subscribe({
       next: res => {
         console.log(res)
-        this.coctelArr = res.drinks[0];
+        this.coctelArr = res;
       },
       error: err =>{
         console.log("Se podrujo un error" + err)
