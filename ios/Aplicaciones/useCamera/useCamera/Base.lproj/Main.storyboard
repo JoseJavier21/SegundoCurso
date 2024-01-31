@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="useCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pR3-uk-swc">
+                                <rect key="frame" x="77" y="59" width="239" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pR3-uk-swc" secondAttribute="height" multiplier="1:1" id="fQX-Fc-kjC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwx-PR-QEn">
+                                <rect key="frame" x="301" y="362" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Galeria"/>
+                                <connections>
+                                    <action selector="galeriaAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xd3-Dr-Enq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDg-ME-W7a">
+                                <rect key="frame" x="105" y="505" width="184" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Guardar en la Galeria"/>
+                                <connections>
+                                    <action selector="guardarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IMi-kr-FsT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-uT-VAD">
+                                <rect key="frame" x="24" y="362" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Foto"/>
+                                <connections>
+                                    <action selector="fotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OiP-Hi-Fca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hDg-ME-W7a" secondAttribute="bottom" constant="278" id="3zF-cy-FrA"/>
+                            <constraint firstItem="pR3-uk-swc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="IRZ-8D-dbb"/>
+                            <constraint firstItem="hDg-ME-W7a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="LrD-Js-y7r"/>
+                            <constraint firstItem="pR3-uk-swc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RU8-51-T3R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pR3-uk-swc" secondAttribute="trailing" constant="77" id="Tfk-Is-pfx"/>
+                            <constraint firstItem="jwx-PR-QEn" firstAttribute="top" secondItem="pR3-uk-swc" secondAttribute="bottom" constant="64" id="WXO-im-4tw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hDg-ME-W7a" secondAttribute="trailing" constant="104" id="YO4-ji-BKz"/>
+                            <constraint firstItem="jwx-PR-QEn" firstAttribute="leading" secondItem="YAb-uT-VAD" secondAttribute="trailing" constant="218" id="dcE-1Y-LMX"/>
+                            <constraint firstItem="YAb-uT-VAD" firstAttribute="top" secondItem="pR3-uk-swc" secondAttribute="bottom" constant="64" id="gBM-6T-FQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jwx-PR-QEn" secondAttribute="trailing" constant="14" id="h5G-w1-IKZ"/>
+                            <constraint firstItem="YAb-uT-VAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="wAa-C5-WS3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgeView" destination="pR3-uk-swc" id="uet-Fe-3fW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709.16030534351137" y="-4.2253521126760569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
