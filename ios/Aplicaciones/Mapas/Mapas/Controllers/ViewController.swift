@@ -8,13 +8,14 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController {
     
+    let funciones =  Funciones()
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var swich: UISwitch!
     
-    
+    var tags: [TagModel] = []
     
     //Ubicaciones
     let coordenateEsposito = CLLocationCoordinate2D(latitude: 38.092711, longitude: -3.634971)
@@ -30,33 +31,23 @@ class ViewController: UIViewController, MKMapViewDelegate {
         crearTag(title: "Estech", coordinate: escuelaEstech, location: "Linares")
         crearTag(title: "Catedral Baeza", coordinate: catedralBaeza, location: "Baeza")
         
-        settings(location: CLLocation(latitude: 38.092711, longitude: -3.634971))
-        
+        //settings(location: CLLocation(latitude: 38.092711, longitude: -3.634971))
+        print(tags)
+        //settings(location: tags.)
         
         swich.isOn = false
+        
+        // Zoom y centrado
+        mapView.setRegion(funciones.settings(location: escuelaEstech), animated: true)
+        
+        
+        
+        //mapView.addAnnotation(funciones.createTag(title: <#T##String#>, coordinate: <#T##CLLocationCoordinate2D#>, location: <#T##String#>))
     }
     
     
     @IBAction func hiddenPlace(_ sender: UISwitch) {
         
-        var tagModel: TagModel? = nil
-        
-        for annotation in mapView.annotations {
-            tagModel = (annotation as? TagModel)!
-        }
-        
-        if sender.isOn{
-            
-            if tagModel!.location == "Linares" {
-                mapView.view(for: tagModel!)?.isHidden = false
-            }
-
-            print("Se han tenido que ocultar los tags fuera de lianares")
-        }
-    
-        mapView.view(for: tagModel!)?.isHidden = true
-
-        print("Ahora los tendrian que volver a mostrar")
     }
     
     
@@ -64,15 +55,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func crearTag(title: String, coordinate: CLLocationCoordinate2D, location: String){
         let tagFunc = TagModel(coordinate: coordinate, title: title, location: "")
         mapView.addAnnotation(tagFunc)
+        
     }
     
     
-    // Zoom y Centrado del mapa
-    func settings(location: CLLocation){
-        let regionRadius: CLLocationDistance = 1200
-        let centradoMapa = MKCoordinateRegion(center: location.coordinate , latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(centradoMapa, animated: true)
-    }
+    
+
+}
+
+
+extension ViewController: MKMapViewDelegate{
     
     // se configuran los tags y se le dan la vista
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -119,10 +111,5 @@ class ViewController: UIViewController, MKMapViewDelegate {
           
        }
        
-   
-
-
-
-                                      
 }
 
