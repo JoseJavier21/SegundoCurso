@@ -10,9 +10,8 @@ import MapKit
 
 class ViewController: UIViewController {
     
-    
-    let funciones = Funciones()
-    
+    let funciones =  Funciones()
+
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var swich: UISwitch!
     
@@ -29,7 +28,7 @@ class ViewController: UIViewController {
         mapView.delegate = self
         
         crearTag(title: "El Pósito", coordinate: coordenateEsposito, location: "Linares")
-        //crearTag(title: "Estech", coordinate: escuelaEstech, location: "Linares")
+        crearTag(title: "Estech", coordinate: escuelaEstech, location: "Linares")
         crearTag(title: "Catedral Baeza", coordinate: catedralBaeza, location: "Baeza")
         
         //settings(location: CLLocation(latitude: 38.092711, longitude: -3.634971))
@@ -41,16 +40,9 @@ class ViewController: UIViewController {
         // Zoom y centrado
         mapView.setRegion(funciones.settings(location: escuelaEstech), animated: true)
         
-        mapView.addAnnotation(funciones.createTag(title: "Casa", coordinate: escuelaEstech, location: "Linares"))
         
         
-    }
-    
-    
-    @IBAction func addNew(_ sender: Any) {
-        
-        let nuevo = funciones.alertDialig(title: "casa", locate: "asd")
-        present(nuevo, animated: true)
+        //mapView.addAnnotation(funciones.createTag(title: <#T##String#>, coordinate: <#T##CLLocationCoordinate2D#>, location: <#T##String#>))
     }
     
     
@@ -90,11 +82,9 @@ extension ViewController: MKMapViewDelegate{
                view.calloutOffset = CGPoint(x: -5, y: 5)
                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
                
-               if annotation.location != "Baeza" {
-                    view.markerTintColor = .red
-               }else{
-                   view.markerTintColor = .yellow
-               }
+               if annotation.location == "Baeza" {
+                    view.markerTintColor = .yellow
+                }
            }
         
            return view
@@ -120,8 +110,6 @@ extension ViewController: MKMapViewDelegate{
            location.mapItem().openInMaps(launchOptions: lanchOption)
           
        }
-    
-    
        
 }
 
