@@ -7,9 +7,9 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 class ViewController: UIViewController {
-    
     
     let funciones = Funciones()
     
@@ -28,35 +28,37 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         mapView.delegate = self
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleMapTap(gestureReconizer:)))
+         mapView.addGestureRecognizer(tapGesture)
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        let manageContext = appDelegate.persistentContainer.viewContext
+        
+        let fechRequest = NSFetchRequest<NSManagedObject>(entityName: "Locate")
+        
         crearTag(title: "El Pósito", coordinate: coordenateEsposito, location: "Linares")
         //crearTag(title: "Estech", coordinate: escuelaEstech, location: "Linares")
         crearTag(title: "Catedral Baeza", coordinate: catedralBaeza, location: "Baeza")
         
         //settings(location: CLLocation(latitude: 38.092711, longitude: -3.634971))
-        print(tags)
-        //settings(location: tags.)
-        
-        swich.isOn = false
+                  
         
         // Zoom y centrado
         mapView.setRegion(funciones.settings(location: escuelaEstech), animated: true)
         
-        mapView.addAnnotation(funciones.createTag(title: "Casa", coordinate: escuelaEstech, location: "Linares"))
-        
+
         
     }
     
     
     @IBAction func addNew(_ sender: Any) {
         
-        let nuevo = funciones.alertDialig(title: "casa", locate: "asd")
+        let nuevo = funciones.alertDialig(title: "casa", locate: "")
         present(nuevo, animated: true)
     }
     
     
-    @IBAction func hiddenPlace(_ sender: UISwitch) {
-        
-    }
+    
     
     
     // funcion para crear tags
@@ -66,13 +68,28 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-
 }
 
-
 extension ViewController: MKMapViewDelegate{
+    
+    @objc func handleMapTap(gestureReconizer: UITapGestureRecognizer) {
+        let location = gestureReconizer.location(in: mapView)
+        let coordinate = mapView.convert(location,toCoordinateFrom: mapView)
+
+        // Aquí puedes hacer lo que necesites con las coordenadas
+        //print("Latitud: \(coordinate.latitude), Longitud: \(coordinate.longitude)")
+
+        // Por ejemplo, agregar un pin en el lugar que el usuario tocó
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "Nuevo Pin"
+        
+        mapView.addAnnotation(funciones.createTag(title: "Casa", coordinate: annotation.coordinate, location: "Linares"))
+        
+        
+        mapView.addAnnotation(annotation)
+    }
+    
     
     // se configuran los tags y se le dan la vista
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

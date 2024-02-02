@@ -24,9 +24,6 @@
                             </mapView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7uJ-4S-tJn">
                                 <rect key="frame" x="334" y="69" width="51" height="31"/>
-                                <connections>
-                                    <action selector="hiddenPlace:" destination="BYZ-38-t0r" eventType="valueChanged" id="LbX-a4-Itq"/>
-                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-y9-ENB">
                                 <rect key="frame" x="250.33333333333334" y="65" width="75.666666666666657" height="35"/>
