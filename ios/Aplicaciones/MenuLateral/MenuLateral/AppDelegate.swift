@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  MenuLateral
 //
-//  Created by dam2 on 18/1/24.
+//  Created by dam2 on 23/1/24.
 //
 
 import UIKit
+import SideMenu
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,5 +33,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func useMenuGestures(){
+        
+        // Define the menus
+        let leftMenuNavigationController = SideMenuNavigationController(rootViewController: ViewController())
+        SideMenuManager.default.leftMenuNavigationController = leftMenuNavigationController
+
+        let rightMenuNavigationController = SideMenuNavigationController(rootViewController: ViewController())
+        SideMenuManager.default.rightMenuNavigationController = rightMenuNavigationController
+
+        // Setup gestures: the left and/or right menus must be set up (above) for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the view controller it displays!
+        SideMenuManager.default.addPanGestureToPresent(toView: leftMenuNavigationController.navigationBar)
+        SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: leftMenuNavigationController.view)
+
+        // (Optional) Prevent status bar area from turning black when menu appears:
+        leftMenuNavigationController.statusBarEndAlpha = 0
+        // Copy all settings to the other menu
+        rightMenuNavigationController.settings = leftMenuNavigationController.settings
+        
+    }
 }
 

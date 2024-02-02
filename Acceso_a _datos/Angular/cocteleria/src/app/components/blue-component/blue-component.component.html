@@ -1,18 +1,21 @@
-<h2>Blue Margarita</h2>
+<!-- blue-component.component.html -->
+<div>
 
-<img src="" alt="">
+    <h2>{{ coctelArr.strDrink }}</h2>
+    <img [src]="coctelArr.strDrinkThumb" alt="foto contel">
 
-<div *ngIf="coctelArr != null">
-    <h4>Ingredientes:</h4>
+    <p>Ingredientes:</p>
 
-    <ul >
-        <li>{{coctelArr.strIngredient1}}</li>
-        <li>{{coctelArr.strIngredient2}}</li>
-        <li>{{coctelArr.strIngredient3}}</li>
+    <ul>
+      <li>{{ coctelArr.strIngredient1 }}</li>
+      <li>{{ coctelArr.strIngredient2 }}</li>
+      <li>{{ coctelArr.strIngredient3 }}</li>
+      <li>{{ coctelArr.strIngredient4 }}</li>
     </ul>
 
     <h4>Instrucciones:</h4>
-    <p>{{coctelArr.strInstrctionsIT}}</p>
+    <p>{{ coctelArr.strInstrctionsIT }}</p>
 
 </div>
 
+  

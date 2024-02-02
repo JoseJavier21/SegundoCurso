@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CoctelServiceService {
 
-  private BASE_URL: string = "https://www.thecocktaildb.com/api/json/v1/1/search.php?"
+  private BASE_URL: string = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
 
   constructor(private http:HttpClient) { }
 
   getCoctel(coctel: string): Observable<any>{
-    return this.http.get<any>(this.BASE_URL + 's' + coctel)
+    return this.http.get<any>(this.BASE_URL + coctel)
   }
 }

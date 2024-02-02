@@ -1,0 +1,62 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "Bienvenida" : {
+      "comment" : "hi",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
+        }
+      }
+    },
+    "Lang" : {
+      "comment" : "btn",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lenguage"
+          }
+        }
+      }
+    },
+    "name" : {
+      "comment" : "n",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "name"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nombre"
+          }
+        }
+      }
+    },
+    "ok" : {
+      "comment" : "btn",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "submit"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "enviar"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

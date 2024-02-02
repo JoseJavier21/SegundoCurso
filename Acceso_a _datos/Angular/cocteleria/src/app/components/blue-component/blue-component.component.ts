@@ -10,14 +10,15 @@ import { CoctelServiceService } from 'src/app/services/coctel-service.service';
 export class BlueComponentComponent {
 
   coctelArr: Coctel = {
-    strDrink: '',
-    strDrinkThumb: '',
-    strIngredient1: '',
-    strIngredient2: '',
-    strIngredient3: '',
-    strIngredient4: '',
-    strInstrctionsIT: ''
-  }
+      strDrink: '',
+      strDrinkThumb: '',
+      strIngredient1: '',
+      strIngredient2: '',
+      strIngredient3: '',
+      strIngredient4: '',
+      strInstrctionsIT: ''
+    }
+  
 
   constructor(private coctelService: CoctelServiceService){}
 
@@ -26,7 +27,7 @@ export class BlueComponentComponent {
     this.coctelService.getCoctel("blue margarita").subscribe({
       next: res => {
         console.log(res)
-        this.coctelArr = res.drinks[0];
+        this.coctelArr = res;
       },
       error: err =>{
         console.log("Se podrujo un error" + err)
@@ -34,5 +35,5 @@ export class BlueComponentComponent {
     })
     
   }
-}
 
+}
