@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "KVt-mp-1wX"; */
+"KVt-mp-1wX.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Inicio de Sesion"; ObjectID = "Nwe-n3-Qij"; */
+"Nwe-n3-Qij.text" = "Inicio de Sesion";
+
+/* Class = "UIButton"; configuration.title = "Registrar"; ObjectID = "VJC-N6-ZM9"; */
+"VJC-N6-ZM9.configuration.title" = "Registrar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VJC-N6-ZM9"; */
+"VJC-N6-ZM9.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Contraseña"; ObjectID = "eKq-xn-AeM"; */
+"eKq-xn-AeM.text" = "Contraseña";
+
+/* Class = "UIButton"; configuration.title = "¿se le ha olvidado la contraseña?"; ObjectID = "fON-Jd-AEh"; */
+"fON-Jd-AEh.configuration.title" = "¿se le ha olvidado la contraseña?";
+
+/* Class = "UIButton"; normalTitle = "lenguage"; ObjectID = "fON-Jd-AEh"; */
+"fON-Jd-AEh.normalTitle" = "lenguage";

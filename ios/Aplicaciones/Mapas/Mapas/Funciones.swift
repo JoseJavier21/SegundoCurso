@@ -21,24 +21,31 @@ class Funciones{
     
     
     func createTag(title: String, coordinate: CLLocationCoordinate2D, location: String) -> MKAnnotation{
+        
+        
+        
         return TagModel(coordinate: coordinate, title: title, location: location)
+        
+        
+        
     }
     
+
     
-    
-    func alertDialig(title: String, locate: String) -> UIAlertController{
+    func alertDialig() -> UIAlertController{
         
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
         let manageContext = appDelegate!.persistentContainer.viewContext
         
-        let entity = NSEntityDescription.entity(forEntityName: "Locate", in: manageContext)!
+        let entity = NSEntityDescription.entity(forEntityName: "Lugar", in: manageContext)!
         
         let localizacion = NSManagedObject(entity: entity, insertInto: manageContext)
+
         
-        localizacion.setValue(title, forKeyPath: "titulo")
-        localizacion.setValue("", forKeyPath: "lat")
-        localizacion.setValue("", forKeyPath: "long")
+//        localizacion.setValue(title, forKeyPath: "titulo")
+//        localizacion.setValue("", forKeyPath: "lat")
+//        localizacion.setValue("", forKeyPath: "long")
         
         do {
             try manageContext.save()
@@ -51,7 +58,7 @@ class Funciones{
         let aniadir = UIAlertAction(title: "", style: .default, handler: {(action) -> Void in
             var titulo = ac.textFields![0]
             var localizacion = ac.textFields![1]
-            titulo.text = title
+            titulo.text = "title"
             
         })
         

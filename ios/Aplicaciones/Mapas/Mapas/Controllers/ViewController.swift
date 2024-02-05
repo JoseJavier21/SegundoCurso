@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         let manageContext = appDelegate.persistentContainer.viewContext
         
-        let fechRequest = NSFetchRequest<NSManagedObject>(entityName: "Locate")
+        _ = NSFetchRequest<NSManagedObject>(entityName: "Lugar")
         
         crearTag(title: "El Pósito", coordinate: coordenateEsposito, location: "Linares")
         //crearTag(title: "Estech", coordinate: escuelaEstech, location: "Linares")
@@ -46,18 +46,15 @@ class ViewController: UIViewController {
         // Zoom y centrado
         mapView.setRegion(funciones.settings(location: escuelaEstech), animated: true)
         
-
         
     }
     
     
     @IBAction func addNew(_ sender: Any) {
         
-        let nuevo = funciones.alertDialig(title: "casa", locate: "")
-        present(nuevo, animated: true)
+        let nuevo = funciones.alertDialig
+        present(nuevo(), animated: true)
     }
-    
-    
     
     
     
@@ -107,10 +104,10 @@ extension ViewController: MKMapViewDelegate{
                view.calloutOffset = CGPoint(x: -5, y: 5)
                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
                
-               if annotation.location != "Baeza" {
-                    view.markerTintColor = .red
+               if annotation.location != "Linares" {
+                    view.markerTintColor = .yellow
                }else{
-                   view.markerTintColor = .yellow
+                   view.markerTintColor = .red
                }
            }
         
