@@ -9,8 +9,8 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
-    
 
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var ocultarTags: UISwitch!
     
@@ -32,21 +32,20 @@ extension ViewController: MKMapViewDelegate{
     
     // se le da funcionalidad a los tags
    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-       let location = view.annotation as! TagModel
-       let lanchOption = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
-       
-       if location.location != "Linares" {
-           let lanchOption2 = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-           location.mapItem().openInMaps(launchOptions: lanchOption2)
-           
-       }else {
-           if location.title == "Estech"{
-               let url = URL(string: "https://escuelaestech.es")!
-               UIApplication.shared.open(url)
-           }
-       }
-       
-       location.mapItem().openInMaps(launchOptions: lanchOption)
+       //let location = view.annotation as! TagModel
+       //let lanchOption = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+//       if location.location != "Linares" {
+//           let lanchOption2 = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+//           location.mapItem().openInMaps(launchOptions: lanchOption2)
+//           
+//       }else {
+//           if location.title == "Estech"{
+//               let url = URL(string: "https://escuelaestech.es")!
+//               UIApplication.shared.open(url)
+//           }
+//       }
+//       
+//       location.mapItem().openInMaps(launchOptions: lanchOption)
       
    }
     
@@ -64,8 +63,6 @@ extension ViewController: MKMapViewDelegate{
         annotation.title = "Nuevo Pin"
         
         //mapView.addAnnotation(funciones.createTag(title: "Casa", coordinate: annotation.coordinate, location: "Linares"))
-        
-        
         //mapView.addAnnotation(annotation)
     }
 }
