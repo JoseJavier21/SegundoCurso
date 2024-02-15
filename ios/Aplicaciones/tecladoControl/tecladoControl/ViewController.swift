@@ -64,6 +64,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+
+    
     
     @objc func keyBoardWillHide(notification: NSNotification){
         print("El teclado se va a ocultar")
@@ -94,7 +96,6 @@ extension UIView{
 extension UIViewController{
     
 
-    
     func keyboardWhenTapeAround(){
         // Aqui es donde la da la funcionalidad
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

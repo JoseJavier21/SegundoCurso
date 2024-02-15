@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var ocultarTags: UISwitch!
     
+    var targets : []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
