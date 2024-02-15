@@ -15,9 +15,20 @@ struct DetalleVista: View {
         
         VStack{
             ZStack(alignment: .bottomTrailing){
-                Image(item.mainImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+//                Image(item.mainImage)
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+                AsyncImage(
+                    url: item.imageUrl,
+                    content: { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                        },
+                        placeholder: {
+                            ProgressView()
+                        }
+                    )
+                    .frame(width: UIScreen.main.bounds.width, height: 200)
                 Text("Foto: \(item.photoCredit)")
                     .padding(5)
                     .font(.title3)
