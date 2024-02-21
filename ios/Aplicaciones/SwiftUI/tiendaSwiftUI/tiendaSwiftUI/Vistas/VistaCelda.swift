@@ -9,34 +9,39 @@ import SwiftUI
 
 struct VistaCelda: View {
     
-    let producto: ProductoItem
+    let producto : ProductoModel
     
     var body: some View {
     
         HStack{
             AsyncImage(
-                url: producto.image,
+                url: URL(string: producto.imagen),
                 content: { image in
                     image.resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 90, height: 130)
+                        .padding(.leading, 10)
                     },
                     placeholder: {
                         ProgressView()
                     }
                 )
+            
                 Spacer()
             VStack{
                 Text(producto.title)
                     .font(.title2)
                     .padding(.bottom, 40)
+                    
                 Text("Categoria: \(producto.category)")
-                    .font(.footnote)
-                    .padding(.trailing, 50)
+                    .font(.title3)
+                    .padding(.trailing, 30)
             }
-            Text("Precio: \(producto.price)")
+            Text("Precio: \(producto.price)€")
                 .font(.subheadline)
                 .padding(.top, 70)
+                .padding(.trailing, 10)
+            
         }
         
     }
