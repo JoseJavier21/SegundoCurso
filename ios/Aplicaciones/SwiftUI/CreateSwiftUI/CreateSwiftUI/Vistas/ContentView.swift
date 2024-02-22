@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(ModelData.self) var modelData
+    
     var landmark: LandMark
+    
+    var landmarkIndex: Int{
+        modelData.landMarks.firstIndex(where: {$0.id == landmark.id})!
+    }
+    
     var body: some View {
+        
+        @Bindable var modelData = modelData
         
         ScrollView {
             
@@ -21,14 +30,17 @@ struct ContentView: View {
                 
                 CirculineImage()
                     .frame(height: 200)
-                    .offset(x: 35, y: -50)
-                    .padding(.bottom, -90)
+                    .offset(x: 35, y: -60)
+                    .padding(.bottom, -70)
                 
                 VStack(alignment: .leading){
-                    Text(landmark.name)
-                        .padding(.leading)
-                        .font(.title)
+                    HStack {
+                        Text(landmark.name)
+                            .padding(.leading)
+                            .font(.title)
                         .foregroundStyle(.green)
+                        FavoritesButton(isSet: $modelData.landMarks[landmarkIndex].isFavorite)
+                    }
                     HStack{
                         Text(landmark.park)
                             .font(.subheadline)
@@ -52,6 +64,7 @@ struct ContentView: View {
 
 #Preview {
     NavigationStack{
-        ContentView(landmark: landMarks[0])
+        ContentView(landmark: ModelData().landMarks[0])
+            .environment(ModelData())
     }
 }

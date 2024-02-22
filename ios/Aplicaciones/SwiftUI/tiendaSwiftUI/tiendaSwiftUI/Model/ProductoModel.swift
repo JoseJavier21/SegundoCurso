@@ -7,24 +7,33 @@
 
 import SwiftUI
 
-struct ProductoModel: Codable, Hashable, Identifiable{
+struct ProductoModel: Codable, Identifiable, Hashable{
     
-    var id: UUID
+    static func == (lhs: ProductoModel, rhs: ProductoModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    var id: Int
     var title: String
-    var price: Int
+    var price: Double
     var description: String
     var category: String
     var imagen: String
-    var rating: [ProductItem]
+    var rating: Rating
     
     #if DEBUG
-    static let ejemplo = ProductoModel(id: UUID(), title: "producto Ejemplo", price: 123, description: "What do you get? Pancakes! How many do you get? One metric stack! That's equivalent to 1000 millistacks, or a tenth of a kilostack. In short, you get a lot of pancakes.", category: "ropa", imagen: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg", rating: [ProductItem.init(id: UUID(), rate: 10.0, count: 1.0)])
+    static let ejemplo = ProductoModel(id: 1, title: "producto Ejemplo", price: 123, description: "What do you get? Pancakes! How many do you get? One metric stack! That's equivalent to 1000 millistacks, or a tenth of a kilostack. In short, you get a lot of pancakes.", category: "ropa", imagen: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg", rating: Rating(rate: 13.34, count: 234))
     #endif
 
 }
 
-struct ProductItem: Codable, Hashable, Identifiable{
-    var id: UUID
-    var rate: Double
-    var count: Double
+struct Rating: Codable, Hashable {
+    let rate: Double
+    let count: Int
 }
+
+

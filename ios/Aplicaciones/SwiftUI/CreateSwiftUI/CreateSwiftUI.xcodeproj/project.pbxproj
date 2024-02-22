@@ -18,6 +18,7 @@
 		3DA480892B7D3C990045A420 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA480882B7D3C990045A420 /* ModelData.swift */; };
 		3DA4808D2B7D44720045A420 /* VistaCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4808C2B7D44720045A420 /* VistaCelda.swift */; };
 		3DA4808F2B7D4DD00045A420 /* LandMarksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4808E2B7D4DD00045A420 /* LandMarksList.swift */; };
+		3DF941A22B87DD7200EE0678 /* FavoritesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF941A12B87DD7200EE0678 /* FavoritesButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3DA480882B7D3C990045A420 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3DA4808C2B7D44720045A420 /* VistaCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaCelda.swift; sourceTree = "<group>"; };
 		3DA4808E2B7D4DD00045A420 /* LandMarksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarksList.swift; sourceTree = "<group>"; };
+		3DF941A12B87DD7200EE0678 /* FavoritesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3D6BD0692B7AB291006D985D /* ContentView.swift */,
 				3DA4808C2B7D44720045A420 /* VistaCelda.swift */,
 				3DA4808E2B7D4DD00045A420 /* LandMarksList.swift */,
+				3DF941A12B87DD7200EE0678 /* FavoritesButton.swift */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				3DA4808D2B7D44720045A420 /* VistaCelda.swift in Sources */,
 				3D6BD06A2B7AB291006D985D /* ContentView.swift in Sources */,
 				3D6BD0682B7AB291006D985D /* CreateSwiftUIApp.swift in Sources */,
+				3DF941A22B87DD7200EE0678 /* FavoritesButton.swift in Sources */,
 				3DA480892B7D3C990045A420 /* ModelData.swift in Sources */,
 				3DA4808F2B7D4DD00045A420 /* LandMarksList.swift in Sources */,
 			);

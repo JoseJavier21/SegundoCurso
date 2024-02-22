@@ -15,7 +15,13 @@ import SwiftUI
 //    }
 //}
 
+class ViewModel: ObservableObject{
+    @Published var username: String = ""
+}
+
 struct ContentView: View {
+ 
+    @ObservedObject var viewModel = ViewModel()
     
     @State var texto = "alfonso"
     @State var conta = 0
@@ -27,9 +33,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        HStack{
-            
-        }
+
         
         
 //        Button("Púlsame"){

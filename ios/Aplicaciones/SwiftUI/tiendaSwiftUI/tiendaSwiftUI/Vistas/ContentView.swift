@@ -9,27 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var product = Bundle.main.decode([ProductItem].self, from: "productos.json")
+    var producto = Bundle.main.decode([ProductoModel].self, from: "productos.json")
     
     var body: some View {
-        
-        VStack{
             
-            List{
+            NavigationStack {
+                
+                Form{
+                    ForEach(producto) { tienda in
+                        NavigationLink(destination: ProductoDetalle()) {
+                            VistaCelda(producto: tienda)
+                        }
+                    }
+                }
+                
+                .navigationTitle("Shop") //titulo
+                .listStyle(.grouped)
                 
                 
             }
-            
-            
-        }
+                
+            }
         
-        
-    }
-    
-    
-    
-    
 }
+    
+    
+
 
 #Preview {
     ContentView()

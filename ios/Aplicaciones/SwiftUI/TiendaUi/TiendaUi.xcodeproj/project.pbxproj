@@ -7,24 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D2154662B8662BB002059B4 /* clasecomponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2154652B8662BB002059B4 /* clasecomponentApp.swift */; };
-		3D2154682B8662BB002059B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2154672B8662BB002059B4 /* ContentView.swift */; };
-		3D21546A2B8662BC002059B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2154692B8662BC002059B4 /* Assets.xcassets */; };
-		3D21546D2B8662BC002059B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D21546C2B8662BC002059B4 /* Preview Assets.xcassets */; };
-		3DF941A02B87C82300EE0678 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF9419F2B87C82300EE0678 /* prueba.swift */; };
+		3DA52C602B83E940006E42C6 /* TiendaUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52C5F2B83E940006E42C6 /* TiendaUiApp.swift */; };
+		3DA52C622B83E940006E42C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52C612B83E940006E42C6 /* ContentView.swift */; };
+		3DA52C642B83E94A006E42C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA52C632B83E94A006E42C6 /* Assets.xcassets */; };
+		3DA52C672B83E94A006E42C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA52C662B83E94A006E42C6 /* Preview Assets.xcassets */; };
+		3DA52C6E2B83E9C8006E42C6 /* productos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DA52C6D2B83E9C7006E42C6 /* productos.json */; };
+		3DA52C702B83EC98006E42C6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52C6F2B83EC98006E42C6 /* Helper.swift */; };
+		3DA52C722B83ECB5006E42C6 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52C712B83ECB5006E42C6 /* ItemRow.swift */; };
+		3DA52C742B83ECC3006E42C6 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52C732B83ECC3006E42C6 /* ItemDetail.swift */; };
+		3DA52C782B83ECF7006E42C6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52C772B83ECF7006E42C6 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D2154622B8662BB002059B4 /* clasecomponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clasecomponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D2154652B8662BB002059B4 /* clasecomponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clasecomponentApp.swift; sourceTree = "<group>"; };
-		3D2154672B8662BB002059B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3D2154692B8662BC002059B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D21546C2B8662BC002059B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3DF9419F2B87C82300EE0678 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
+		3DA52C5C2B83E940006E42C6 /* TiendaUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiendaUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA52C5F2B83E940006E42C6 /* TiendaUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiendaUiApp.swift; sourceTree = "<group>"; };
+		3DA52C612B83E940006E42C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3DA52C632B83E94A006E42C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DA52C662B83E94A006E42C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DA52C6D2B83E9C7006E42C6 /* productos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = productos.json; sourceTree = "<group>"; };
+		3DA52C6F2B83EC98006E42C6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3DA52C712B83ECB5006E42C6 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		3DA52C732B83ECC3006E42C6 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		3DA52C772B83ECF7006E42C6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D21545F2B8662BB002059B4 /* Frameworks */ = {
+		3DA52C592B83E940006E42C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,78 +42,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D2154592B8662BB002059B4 = {
+		3DA52C532B83E93F006E42C6 = {
 			isa = PBXGroup;
 			children = (
-				3D2154642B8662BB002059B4 /* clasecomponent */,
-				3D2154632B8662BB002059B4 /* Products */,
+				3DA52C5E2B83E940006E42C6 /* TiendaUi */,
+				3DA52C5D2B83E940006E42C6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3D2154632B8662BB002059B4 /* Products */ = {
+		3DA52C5D2B83E940006E42C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D2154622B8662BB002059B4 /* clasecomponent.app */,
+				3DA52C5C2B83E940006E42C6 /* TiendaUi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D2154642B8662BB002059B4 /* clasecomponent */ = {
+		3DA52C5E2B83E940006E42C6 /* TiendaUi */ = {
 			isa = PBXGroup;
 			children = (
-				3D2154652B8662BB002059B4 /* clasecomponentApp.swift */,
-				3D2154672B8662BB002059B4 /* ContentView.swift */,
-				3DF9419F2B87C82300EE0678 /* prueba.swift */,
-				3D2154692B8662BC002059B4 /* Assets.xcassets */,
-				3D21546B2B8662BC002059B4 /* Preview Content */,
+				3DA52C5F2B83E940006E42C6 /* TiendaUiApp.swift */,
+				3DA52C762B83ECEB006E42C6 /* model */,
+				3DA52C752B83ECC7006E42C6 /* view */,
+				3DA52C6F2B83EC98006E42C6 /* Helper.swift */,
+				3DA52C6D2B83E9C7006E42C6 /* productos.json */,
+				3DA52C632B83E94A006E42C6 /* Assets.xcassets */,
+				3DA52C652B83E94A006E42C6 /* Preview Content */,
 			);
-			path = clasecomponent;
+			path = TiendaUi;
 			sourceTree = "<group>";
 		};
-		3D21546B2B8662BC002059B4 /* Preview Content */ = {
+		3DA52C652B83E94A006E42C6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3D21546C2B8662BC002059B4 /* Preview Assets.xcassets */,
+				3DA52C662B83E94A006E42C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DA52C752B83ECC7006E42C6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3DA52C732B83ECC3006E42C6 /* ItemDetail.swift */,
+				3DA52C712B83ECB5006E42C6 /* ItemRow.swift */,
+				3DA52C612B83E940006E42C6 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3DA52C762B83ECEB006E42C6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3DA52C772B83ECF7006E42C6 /* Model.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D2154612B8662BB002059B4 /* clasecomponent */ = {
+		3DA52C5B2B83E940006E42C6 /* TiendaUi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D2154702B8662BC002059B4 /* Build configuration list for PBXNativeTarget "clasecomponent" */;
+			buildConfigurationList = 3DA52C6A2B83E94A006E42C6 /* Build configuration list for PBXNativeTarget "TiendaUi" */;
 			buildPhases = (
-				3D21545E2B8662BB002059B4 /* Sources */,
-				3D21545F2B8662BB002059B4 /* Frameworks */,
-				3D2154602B8662BB002059B4 /* Resources */,
+				3DA52C582B83E940006E42C6 /* Sources */,
+				3DA52C592B83E940006E42C6 /* Frameworks */,
+				3DA52C5A2B83E940006E42C6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = clasecomponent;
-			productName = clasecomponent;
-			productReference = 3D2154622B8662BB002059B4 /* clasecomponent.app */;
+			name = TiendaUi;
+			productName = TiendaUi;
+			productReference = 3DA52C5C2B83E940006E42C6 /* TiendaUi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3D21545A2B8662BB002059B4 /* Project object */ = {
+		3DA52C542B83E93F006E42C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					3D2154612B8662BB002059B4 = {
+					3DA52C5B2B83E940006E42C6 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 3D21545D2B8662BB002059B4 /* Build configuration list for PBXProject "clasecomponent" */;
+			buildConfigurationList = 3DA52C572B83E93F006E42C6 /* Build configuration list for PBXProject "TiendaUi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +141,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 3D2154592B8662BB002059B4;
-			productRefGroup = 3D2154632B8662BB002059B4 /* Products */;
+			mainGroup = 3DA52C532B83E93F006E42C6;
+			productRefGroup = 3DA52C5D2B83E940006E42C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D2154612B8662BB002059B4 /* clasecomponent */,
+				3DA52C5B2B83E940006E42C6 /* TiendaUi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3D2154602B8662BB002059B4 /* Resources */ = {
+		3DA52C5A2B83E940006E42C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D21546D2B8662BC002059B4 /* Preview Assets.xcassets in Resources */,
-				3D21546A2B8662BC002059B4 /* Assets.xcassets in Resources */,
+				3DA52C672B83E94A006E42C6 /* Preview Assets.xcassets in Resources */,
+				3DA52C642B83E94A006E42C6 /* Assets.xcassets in Resources */,
+				3DA52C6E2B83E9C8006E42C6 /* productos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D21545E2B8662BB002059B4 /* Sources */ = {
+		3DA52C582B83E940006E42C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2154682B8662BB002059B4 /* ContentView.swift in Sources */,
-				3DF941A02B87C82300EE0678 /* prueba.swift in Sources */,
-				3D2154662B8662BB002059B4 /* clasecomponentApp.swift in Sources */,
+				3DA52C622B83E940006E42C6 /* ContentView.swift in Sources */,
+				3DA52C782B83ECF7006E42C6 /* Model.swift in Sources */,
+				3DA52C602B83E940006E42C6 /* TiendaUiApp.swift in Sources */,
+				3DA52C702B83EC98006E42C6 /* Helper.swift in Sources */,
+				3DA52C742B83ECC3006E42C6 /* ItemDetail.swift in Sources */,
+				3DA52C722B83ECB5006E42C6 /* ItemRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3D21546E2B8662BC002059B4 /* Debug */ = {
+		3DA52C682B83E94A006E42C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		3D21546F2B8662BC002059B4 /* Release */ = {
+		3DA52C692B83E94A006E42C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,14 +300,14 @@
 			};
 			name = Release;
 		};
-		3D2154712B8662BC002059B4 /* Debug */ = {
+		3DA52C6B2B83E94A006E42C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"clasecomponent/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TiendaUi/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -288,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.Estech.clasecomponent;
+				PRODUCT_BUNDLE_IDENTIFIER = es.estech.TiendaUi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -296,14 +328,14 @@
 			};
 			name = Debug;
 		};
-		3D2154722B8662BC002059B4 /* Release */ = {
+		3DA52C6C2B83E94A006E42C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"clasecomponent/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TiendaUi/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.Estech.clasecomponent;
+				PRODUCT_BUNDLE_IDENTIFIER = es.estech.TiendaUi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,25 +359,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D21545D2B8662BB002059B4 /* Build configuration list for PBXProject "clasecomponent" */ = {
+		3DA52C572B83E93F006E42C6 /* Build configuration list for PBXProject "TiendaUi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D21546E2B8662BC002059B4 /* Debug */,
-				3D21546F2B8662BC002059B4 /* Release */,
+				3DA52C682B83E94A006E42C6 /* Debug */,
+				3DA52C692B83E94A006E42C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D2154702B8662BC002059B4 /* Build configuration list for PBXNativeTarget "clasecomponent" */ = {
+		3DA52C6A2B83E94A006E42C6 /* Build configuration list for PBXNativeTarget "TiendaUi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D2154712B8662BC002059B4 /* Debug */,
-				3D2154722B8662BC002059B4 /* Release */,
+				3DA52C6B2B83E94A006E42C6 /* Debug */,
+				3DA52C6C2B83E94A006E42C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3D21545A2B8662BB002059B4 /* Project object */;
+	rootObject = 3DA52C542B83E93F006E42C6 /* Project object */;
 }

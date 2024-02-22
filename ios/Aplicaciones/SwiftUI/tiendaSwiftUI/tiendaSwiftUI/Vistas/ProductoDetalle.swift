@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct ProductoDetalle: View {
+    
+    var producto: ProductoModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            
+        VStack{
+         
+            Text(producto.title)
+//            AsyncImage(
+//                url: URL(string: producto.imagen),
+//                content: { image in
+//                    image.resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 90, height: 130)
+//                        .padding(.leading, 10)
+//                    },
+//                    placeholder: {
+//                        ProgressView()
+//                    }
+//                )
+            
+        }
+
     }
 }
 
 #Preview {
-    ProductoDetalle()
+    ProductoDetalle(producto: ProductoModel.ejemplo)
 }
