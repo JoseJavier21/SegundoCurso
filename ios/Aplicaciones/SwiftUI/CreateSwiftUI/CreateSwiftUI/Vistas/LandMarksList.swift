@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LandMarksList: View {
     
+    
     @State private var showFavoriteOnly = false
     @Environment(ModelData.self) var modelData
     
