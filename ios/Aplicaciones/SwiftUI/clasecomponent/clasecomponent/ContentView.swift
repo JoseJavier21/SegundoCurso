@@ -33,7 +33,7 @@ struct ContentView: View {
     
     var body: some View {
         
-
+        HStack{}
         
         
 //        Button("Púlsame"){

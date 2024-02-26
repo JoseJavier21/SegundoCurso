@@ -15,15 +15,16 @@ struct ContentView: View {
             
             NavigationStack {
                 
-                Form{
+                List{
+                    
                     ForEach(producto) { tienda in
-                        NavigationLink(destination: ProductoDetalle()) {
+                        NavigationLink(destination: ProductoDetalle(producto: tienda)) {
                             VistaCelda(producto: tienda)
                         }
                     }
                 }
                 
-                .navigationTitle("Shop") //titulo
+                .navigationTitle("Tienda")
                 .listStyle(.grouped)
                 
                 
