@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; configuration.title = "Enviar"; ObjectID = "7Lo-3v-0sB"; */
+"7Lo-3v-0sB.configuration.title" = "Enviar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7Lo-3v-0sB"; */
+"7Lo-3v-0sB.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "Hty-kD-eJA"; */
+"Hty-kD-eJA.text" = "Nombre";
+
+/* Class = "UITabBarItem"; title = "tres"; ObjectID = "Nfi-aw-BOp"; */
+"Nfi-aw-BOp.title" = "tres";
+
+/* Class = "UITabBarItem"; badgeValue = "1"; ObjectID = "bYY-pO-INI"; */
+"bYY-pO-INI.badgeValue" = "1";
+
+/* Class = "UITabBarItem"; title = "Uno"; ObjectID = "bYY-pO-INI"; */
+"bYY-pO-INI.title" = "Uno";
+
+/* Class = "UILabel"; text = "Correo electrónico"; ObjectID = "hX2-H1-C9m"; */
+"hX2-H1-C9m.text" = "Correo electrónico";
+
+/* Class = "UITabBarItem"; badgeValue = "2"; ObjectID = "hzT-Cx-2IC"; */
+"hzT-Cx-2IC.badgeValue" = "2";
+
+/* Class = "UITabBarItem"; title = "Dos"; ObjectID = "hzT-Cx-2IC"; */
+"hzT-Cx-2IC.title" = "Dos";
+
+/* Class = "UILabel"; text = "Teléfono"; ObjectID = "kGY-o1-6Z2"; */
+"kGY-o1-6Z2.text" = "Teléfono";
