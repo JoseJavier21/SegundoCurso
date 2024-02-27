@@ -15,6 +15,8 @@
 		058F6A722B73DA3200BD1C9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058F6A712B73DA3200BD1C9C /* Assets.xcassets */; };
 		058F6A752B73DA3200BD1C9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058F6A732B73DA3200BD1C9C /* LaunchScreen.storyboard */; };
 		058F6A7D2B74303000BD1C9C /* DosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058F6A7C2B74303000BD1C9C /* DosViewController.swift */; };
+		2608EB902B8DEC3800D7C6D7 /* TresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608EB8F2B8DEC3800D7C6D7 /* TresViewController.swift */; };
+		267A383A2B8CB28C00803D51 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 267A38392B8CB28C00803D51 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,14 @@
 		058F6A742B73DA3200BD1C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		058F6A762B73DA3200BD1C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		058F6A7C2B74303000BD1C9C /* DosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosViewController.swift; sourceTree = "<group>"; };
+		2608EB8F2B8DEC3800D7C6D7 /* TresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TresViewController.swift; sourceTree = "<group>"; };
+		267A38332B8CB26300803D51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		267A38342B8CB26300803D51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		267A38352B8CB26900803D51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		267A38362B8CB26900803D51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		267A38372B8CB27D00803D51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		267A38382B8CB27D00803D51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		267A38392B8CB28C00803D51 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +70,27 @@
 		058F6A642B73DA2D00BD1C9C /* Examen_240208 */ = {
 			isa = PBXGroup;
 			children = (
+				2608EB882B8DEB0600D7C6D7 /* Vistas */,
 				058F6A652B73DA2D00BD1C9C /* AppDelegate.swift */,
 				058F6A672B73DA2D00BD1C9C /* SceneDelegate.swift */,
-				058F6A692B73DA2D00BD1C9C /* UnoViewController.swift */,
-				058F6A7C2B74303000BD1C9C /* DosViewController.swift */,
 				058F6A6B2B73DA2D00BD1C9C /* Main.storyboard */,
 				058F6A712B73DA3200BD1C9C /* Assets.xcassets */,
 				058F6A732B73DA3200BD1C9C /* LaunchScreen.storyboard */,
 				058F6A762B73DA3200BD1C9C /* Info.plist */,
 				058F6A6E2B73DA2D00BD1C9C /* Examen_240208.xcdatamodeld */,
+				267A38392B8CB28C00803D51 /* Localizable.xcstrings */,
 			);
 			path = Examen_240208;
+			sourceTree = "<group>";
+		};
+		2608EB882B8DEB0600D7C6D7 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				058F6A692B73DA2D00BD1C9C /* UnoViewController.swift */,
+				058F6A7C2B74303000BD1C9C /* DosViewController.swift */,
+				2608EB8F2B8DEC3800D7C6D7 /* TresViewController.swift */,
+			);
+			path = Vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,11 +130,13 @@
 			};
 			buildConfigurationList = 058F6A5D2B73DA2D00BD1C9C /* Build configuration list for PBXProject "Examen_240208" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				es,
+				de,
+				en,
 			);
 			mainGroup = 058F6A592B73DA2D00BD1C9C;
 			productRefGroup = 058F6A632B73DA2D00BD1C9C /* Products */;
@@ -133,6 +155,7 @@
 			files = (
 				058F6A752B73DA3200BD1C9C /* LaunchScreen.storyboard in Resources */,
 				058F6A722B73DA3200BD1C9C /* Assets.xcassets in Resources */,
+				267A383A2B8CB28C00803D51 /* Localizable.xcstrings in Resources */,
 				058F6A6D2B73DA2D00BD1C9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2608EB902B8DEC3800D7C6D7 /* TresViewController.swift in Sources */,
 				058F6A6A2B73DA2D00BD1C9C /* UnoViewController.swift in Sources */,
 				058F6A662B73DA2D00BD1C9C /* AppDelegate.swift in Sources */,
 				058F6A682B73DA2D00BD1C9C /* SceneDelegate.swift in Sources */,
@@ -159,6 +183,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				058F6A6C2B73DA2D00BD1C9C /* Base */,
+				267A38332B8CB26300803D51 /* es */,
+				267A38352B8CB26900803D51 /* de */,
+				267A38372B8CB27D00803D51 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -167,6 +194,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				058F6A742B73DA3200BD1C9C /* Base */,
+				267A38342B8CB26300803D51 /* es */,
+				267A38362B8CB26900803D51 /* de */,
+				267A38382B8CB27D00803D51 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -179,6 +209,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -242,6 +273,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -303,6 +335,8 @@
 				DEVELOPMENT_TEAM = 7DTLRHN6WR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Examen_240208/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "para guardar unas fotos ya predefinidas";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "para guardar unas fotos ya predefinidas";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,6 +365,8 @@
 				DEVELOPMENT_TEAM = 7DTLRHN6WR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Examen_240208/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "para guardar unas fotos ya predefinidas";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "para guardar unas fotos ya predefinidas";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
