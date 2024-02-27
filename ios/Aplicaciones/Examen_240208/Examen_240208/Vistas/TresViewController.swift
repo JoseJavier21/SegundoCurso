@@ -14,20 +14,14 @@ class TresViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+        importarGente()
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        importarGente()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     func importarGente(){
@@ -39,6 +33,7 @@ class TresViewController: UITableViewController {
         
         do {
             gente = try manageContext.fetch(fechRequest)
+            tabBarItem.badgeValue = String(gente.count)
             tableView.reloadData()
         }catch let error as NSError {
             print("No se ha podido ejecutar fecth. \(error), \(error.userInfo)")
@@ -47,11 +42,11 @@ class TresViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    /*
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }*/
+        return 1
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -69,46 +64,43 @@ class TresViewController: UITableViewController {
         
         cell.userActivity?.title = nombre
         
-        cell.textLabel!.text = "Nombre: \(nombre!)"
+        cell.textLabel!.text = "Nombre: \(nombre!) - Telefono: \(telefono!) - Correo: \(correo!)"
  
         return cell
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "Borrar"){ (action, view, completionHandler) in
+            
+            let person = self.gente[indexPath.row]
+            
+            //Eliminamos la instacion del CoreData
+            let manageContext = person.managedObjectContext
+            manageContext?.delete(person)
+            
+            //Guardamos los cambios en el contexto
+            do {
+                try manageContext?.save()
+            }catch let error as NSError{
+                print("No se ha podido eliminar. \(error), \(error.userInfo)")
+            }
+            
+            //Eliminamos la instacion del array de people
+            self.gente.remove(at: indexPath.row)
+            
+            //Recargamos la tabla
+            tableView.reloadData()
+        }
+        
+        deleteAction.backgroundColor = .red
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+        
+    
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
 
 }

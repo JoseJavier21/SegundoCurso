@@ -1,7 +1,7 @@
 {
   "sourceLanguage" : "es",
   "strings" : {
-    "Correo Eléctrocnico" : {
+    "Correo electrónico" : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
@@ -14,12 +14,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Email"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Correo Electronico"
           }
         }
       }
@@ -30,19 +24,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Senden"
+            "value" : "Send"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Send"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enviar"
           }
         }
       }
@@ -61,12 +49,6 @@
             "state" : "translated",
             "value" : "Name"
           }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nombre"
-          }
         }
       }
     },
@@ -76,19 +58,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Telefonnumer"
+            "value" : "Telefonmummer"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phone"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teléfono"
           }
         }
       }

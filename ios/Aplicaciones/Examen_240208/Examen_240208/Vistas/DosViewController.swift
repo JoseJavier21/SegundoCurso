@@ -68,49 +68,39 @@ class DosViewController: UIViewController, UITextFieldDelegate{
     
     func comprobacion(){
         
-        if nameField.text == "" ||  mailField.text == "" ||  phoneField.text == nil{
-            
-            alertVacio()
-            
+        if nameField.text != "" ||  mailField.text != "" ||  phoneField.text != ""{
+                    
+            alert()
         }else{
-            
-            save(name: nameField.text!, correo: mailField.text!, telefono: phoneField.text!)
-            alertSend()
-            print("se guardara todo")
+            print("no se puede guardar")
         }
         
     }
     
     
     
-    func alertSend(){
-        
+    func alert(){
+    
         let alert = UIAlertController(title: "Enviado", message: "Se han guardado los datos correctamente", preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-
-            print("Se pulso el OK")
+        let okAction = UIAlertAction(title: "OK", style: .default) { [self] (action) in
+            
+            save(name: nameField.text!, correo: mailField.text!, telefono: phoneField.text!)
+            print("se guardara todo")
+            
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            print("Se canceló el guardado")
         }
         
         alert.addAction(okAction)
+        alert.addAction(cancelAction)
         
         present(alert, animated: true)
     }
     
-    func alertVacio(){
-        
-        let alert = UIAlertController(title: "Error", message: "No se puede quedar ningun campo vacio", preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
 
-            print("Se pulso el OK")
-        }
-        
-        alert.addAction(okAction)
-        
-        present(alert, animated: true)
-    }
-    
     
     
     

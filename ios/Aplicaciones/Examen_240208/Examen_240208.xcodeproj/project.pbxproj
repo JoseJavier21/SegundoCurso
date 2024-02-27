@@ -16,7 +16,7 @@
 		058F6A752B73DA3200BD1C9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058F6A732B73DA3200BD1C9C /* LaunchScreen.storyboard */; };
 		058F6A7D2B74303000BD1C9C /* DosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058F6A7C2B74303000BD1C9C /* DosViewController.swift */; };
 		2608EB902B8DEC3800D7C6D7 /* TresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608EB8F2B8DEC3800D7C6D7 /* TresViewController.swift */; };
-		267A383A2B8CB28C00803D51 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 267A38392B8CB28C00803D51 /* Localizable.xcstrings */; };
+		3DC6CFDD2B8E651D002F8A9B /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC6CFDC2B8E651D002F8A9B /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +33,11 @@
 		2608EB8F2B8DEC3800D7C6D7 /* TresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TresViewController.swift; sourceTree = "<group>"; };
 		267A38332B8CB26300803D51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		267A38342B8CB26300803D51 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		267A38352B8CB26900803D51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		267A38362B8CB26900803D51 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		267A38372B8CB27D00803D51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		267A38382B8CB27D00803D51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		267A38392B8CB28C00803D51 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3DC6CFDC2B8E651D002F8A9B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3DC6CFDE2B8E652A002F8A9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3DC6CFDF2B8E652A002F8A9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3DC6CFE02B8E652F002F8A9B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3DC6CFE12B8E652F002F8A9B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				058F6A732B73DA3200BD1C9C /* LaunchScreen.storyboard */,
 				058F6A762B73DA3200BD1C9C /* Info.plist */,
 				058F6A6E2B73DA2D00BD1C9C /* Examen_240208.xcdatamodeld */,
-				267A38392B8CB28C00803D51 /* Localizable.xcstrings */,
+				3DC6CFDC2B8E651D002F8A9B /* Localizable.xcstrings */,
 			);
 			path = Examen_240208;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 			knownRegions = (
 				Base,
 				es,
-				de,
 				en,
+				de,
 			);
 			mainGroup = 058F6A592B73DA2D00BD1C9C;
 			productRefGroup = 058F6A632B73DA2D00BD1C9C /* Products */;
@@ -155,7 +155,7 @@
 			files = (
 				058F6A752B73DA3200BD1C9C /* LaunchScreen.storyboard in Resources */,
 				058F6A722B73DA3200BD1C9C /* Assets.xcassets in Resources */,
-				267A383A2B8CB28C00803D51 /* Localizable.xcstrings in Resources */,
+				3DC6CFDD2B8E651D002F8A9B /* Localizable.xcstrings in Resources */,
 				058F6A6D2B73DA2D00BD1C9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,8 +184,8 @@
 			children = (
 				058F6A6C2B73DA2D00BD1C9C /* Base */,
 				267A38332B8CB26300803D51 /* es */,
-				267A38352B8CB26900803D51 /* de */,
-				267A38372B8CB27D00803D51 /* en */,
+				3DC6CFDE2B8E652A002F8A9B /* en */,
+				3DC6CFE02B8E652F002F8A9B /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -195,8 +195,8 @@
 			children = (
 				058F6A742B73DA3200BD1C9C /* Base */,
 				267A38342B8CB26300803D51 /* es */,
-				267A38362B8CB26900803D51 /* de */,
-				267A38382B8CB27D00803D51 /* en */,
+				3DC6CFDF2B8E652A002F8A9B /* en */,
+				3DC6CFE12B8E652F002F8A9B /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

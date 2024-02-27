@@ -14,14 +14,23 @@ class UnoViewController: UIViewController, UIImagePickerControllerDelegate, UINa
 
         // Configurar el gesto para detectar el toque en la imagen
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         
         tapGesture.delegate = self
+        tapGesture1.delegate = self
+        tapGesture2.delegate = self
+        tapGesture3.delegate = self
+        
+        
         imgage.addGestureRecognizer(tapGesture)
-        image1.addGestureRecognizer(tapGesture)
-        image2.addGestureRecognizer(tapGesture)
-        image3.addGestureRecognizer(tapGesture)
+        image1.addGestureRecognizer(tapGesture1)
+        image2.addGestureRecognizer(tapGesture2)
+        image3.addGestureRecognizer(tapGesture3)
         
         imgage.isUserInteractionEnabled = true
+        image1.isUserInteractionEnabled = true
         image2.isUserInteractionEnabled = true
         image3.isUserInteractionEnabled = true
 
@@ -29,12 +38,12 @@ class UnoViewController: UIViewController, UIImagePickerControllerDelegate, UINa
 
     // Función que se ejecutará cuando se toque la imagen
     @objc func imageTapped(_ sender: UITapGestureRecognizer){
-        guardarfotos()
+        guardarfotos(imagen: sender.view as! UIImageView)
     }
     
-    func guardarfotos() {
+    func guardarfotos(imagen : UIImageView) {
         
-        UIImageWriteToSavedPhotosAlbum(imgage.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        UIImageWriteToSavedPhotosAlbum(imagen.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
 
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
