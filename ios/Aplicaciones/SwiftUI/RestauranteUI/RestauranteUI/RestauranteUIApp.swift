@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct RestauranteUIApp: App {
+    
+    @StateObject var order = OrderModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(order)
+                
         }
     }
 }

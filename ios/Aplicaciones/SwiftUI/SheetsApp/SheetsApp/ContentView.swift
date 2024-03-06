@@ -26,7 +26,7 @@ struct ContentView: View {
 //        })
         .sheet(isPresented: $isPresented, onDismiss: {isPresented = false}, content: {
             VistaModel(isPresented: $isPresented)
-                .presentationDetents([.large, .medium, .fraction(0.3)])
+                .presentationDetents([.fraction(0.3)])
         })
         
         

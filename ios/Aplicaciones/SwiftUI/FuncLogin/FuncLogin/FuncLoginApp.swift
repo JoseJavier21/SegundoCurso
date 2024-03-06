@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct FuncLoginApp: App {
+    
+    
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

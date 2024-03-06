@@ -13,9 +13,13 @@
 		3D2505A52B7E7D74007F2724 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2505A42B7E7D74007F2724 /* Preview Assets.xcassets */; };
 		3D2505AC2B7E7E0B007F2724 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D2505AB2B7E7E0B007F2724 /* menu.json */; };
 		3D2505AE2B7E7EE0007F2724 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2505AD2B7E7EE0007F2724 /* Helper.swift */; };
-		3D2505B22B7E8097007F2724 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2505B12B7E8097007F2724 /* Model.swift */; };
+		3D2505B22B7E8097007F2724 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2505B12B7E8097007F2724 /* MenuItem.swift */; };
 		3D2505B42B7E87A7007F2724 /* CeldaVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2505B32B7E87A7007F2724 /* CeldaVista.swift */; };
 		3D2505B62B7E8EBA007F2724 /* DetalleVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2505B52B7E8EBA007F2724 /* DetalleVista.swift */; };
+		3D65D4462B98E055006D3FC9 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65D4452B98E055006D3FC9 /* OrderModel.swift */; };
+		3D65D4482B98E39C006D3FC9 /* VistaOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65D4472B98E39C006D3FC9 /* VistaOrder.swift */; };
+		3D65D44A2B98E566006D3FC9 /* MainVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65D4492B98E566006D3FC9 /* MainVista.swift */; };
+		3D65D44D2B98E926006D3FC9 /* CheckoutVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65D44C2B98E926006D3FC9 /* CheckoutVista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +30,13 @@
 		3D2505A42B7E7D74007F2724 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D2505AB2B7E7E0B007F2724 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		3D2505AD2B7E7EE0007F2724 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		3D2505B12B7E8097007F2724 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3D2505B12B7E8097007F2724 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		3D2505B32B7E87A7007F2724 /* CeldaVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaVista.swift; sourceTree = "<group>"; };
 		3D2505B52B7E8EBA007F2724 /* DetalleVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleVista.swift; sourceTree = "<group>"; };
+		3D65D4452B98E055006D3FC9 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		3D65D4472B98E39C006D3FC9 /* VistaOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaOrder.swift; sourceTree = "<group>"; };
+		3D65D4492B98E566006D3FC9 /* MainVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVista.swift; sourceTree = "<group>"; };
+		3D65D44C2B98E926006D3FC9 /* CheckoutVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				3D2505AD2B7E7EE0007F2724 /* Helper.swift */,
-				3D2505B12B7E8097007F2724 /* Model.swift */,
+				3D2505B12B7E8097007F2724 /* MenuItem.swift */,
+				3D65D4452B98E055006D3FC9 /* OrderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +103,9 @@
 				3D25059F2B7E7D73007F2724 /* ContentView.swift */,
 				3D2505B32B7E87A7007F2724 /* CeldaVista.swift */,
 				3D2505B52B7E8EBA007F2724 /* DetalleVista.swift */,
+				3D65D4472B98E39C006D3FC9 /* VistaOrder.swift */,
+				3D65D4492B98E566006D3FC9 /* MainVista.swift */,
+				3D65D44C2B98E926006D3FC9 /* CheckoutVista.swift */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -170,11 +182,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2505B42B7E87A7007F2724 /* CeldaVista.swift in Sources */,
+				3D65D44D2B98E926006D3FC9 /* CheckoutVista.swift in Sources */,
 				3D2505A02B7E7D73007F2724 /* ContentView.swift in Sources */,
 				3D25059E2B7E7D73007F2724 /* RestauranteUIApp.swift in Sources */,
 				3D2505B62B7E8EBA007F2724 /* DetalleVista.swift in Sources */,
+				3D65D44A2B98E566006D3FC9 /* MainVista.swift in Sources */,
+				3D65D4462B98E055006D3FC9 /* OrderModel.swift in Sources */,
 				3D2505AE2B7E7EE0007F2724 /* Helper.swift in Sources */,
-				3D2505B22B7E8097007F2724 /* Model.swift in Sources */,
+				3D65D4482B98E39C006D3FC9 /* VistaOrder.swift in Sources */,
+				3D2505B22B7E8097007F2724 /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

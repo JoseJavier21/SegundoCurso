@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var user: String = ""
     
     var body: some View {
+
         
         ZStack {
             Color.blue
@@ -48,7 +49,7 @@ struct ContentView: View {
                     
                 
                 Button("Login") {
-                    envio()
+                        
                 }
                 .frame(width: 150, height: 70)
                 .background(.cyan)
@@ -70,18 +71,16 @@ struct ContentView: View {
     }
     
     
-    func envio(){
-        
+    func envio() -> Bool{
         if user == "user" && contra == "pass" || contra.count >= 4{
             
-            
-            
+            print("se envio los datos")
+            return true
         }else{
             
-            
-                        
+            print("no se enviaron los datos")
+            return false
         }
-        
     }
         
 }

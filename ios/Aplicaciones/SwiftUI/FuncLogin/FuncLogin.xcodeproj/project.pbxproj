@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D65D4442B98DBEA006D3FC9 /* VistaSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D65D4432B98DBEA006D3FC9 /* VistaSheet.swift */; };
 		3DA997CC2B9654D800700309 /* FuncLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA997CB2B9654D800700309 /* FuncLoginApp.swift */; };
 		3DA997CE2B9654D800700309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA997CD2B9654D800700309 /* ContentView.swift */; };
 		3DA997D02B9654DA00700309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA997CF2B9654DA00700309 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D65D4432B98DBEA006D3FC9 /* VistaSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaSheet.swift; sourceTree = "<group>"; };
 		3DA997C82B9654D800700309 /* FuncLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuncLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA997CB2B9654D800700309 /* FuncLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncLoginApp.swift; sourceTree = "<group>"; };
 		3DA997CD2B9654D800700309 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D65D44B2B98E8E6006D3FC9 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				3DA997CD2B9654D800700309 /* ContentView.swift */,
+				3DA997DF2B96610900700309 /* DatosView.swift */,
+				3D65D4432B98DBEA006D3FC9 /* VistaSheet.swift */,
+				3DA997DB2B96583100700309 /* Pestania2.swift */,
+				3DA997DD2B96584100700309 /* Pestania1.swift */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
 		3DA997BF2B9654D800700309 = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +71,8 @@
 		3DA997CA2B9654D800700309 /* FuncLogin */ = {
 			isa = PBXGroup;
 			children = (
+				3D65D44B2B98E8E6006D3FC9 /* Vistas */,
 				3DA997CB2B9654D800700309 /* FuncLoginApp.swift */,
-				3DA997CD2B9654D800700309 /* ContentView.swift */,
-				3DA997DF2B96610900700309 /* DatosView.swift */,
-				3DA997DB2B96583100700309 /* Pestania2.swift */,
-				3DA997DD2B96584100700309 /* Pestania1.swift */,
 				3DA997CF2B9654DA00700309 /* Assets.xcassets */,
 				3DA997D12B9654DA00700309 /* Preview Content */,
 			);
@@ -149,6 +160,7 @@
 				3DA997DE2B96584100700309 /* Pestania1.swift in Sources */,
 				3DA997DC2B96583100700309 /* Pestania2.swift in Sources */,
 				3DA997CE2B9654D800700309 /* ContentView.swift in Sources */,
+				3D65D4442B98DBEA006D3FC9 /* VistaSheet.swift in Sources */,
 				3DA997E02B96610900700309 /* DatosView.swift in Sources */,
 				3DA997CC2B9654D800700309 /* FuncLoginApp.swift in Sources */,
 			);
