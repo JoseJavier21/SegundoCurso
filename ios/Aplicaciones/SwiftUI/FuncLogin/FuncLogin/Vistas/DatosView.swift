@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DatosView: View {
 
-
+    @EnvironmentObject var model: ViewModel
     
     var body: some View {
       
@@ -34,4 +34,5 @@ struct DatosView: View {
 
 #Preview {
     DatosView()
+        .environmentObject(ViewModel())
 }

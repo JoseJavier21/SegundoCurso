@@ -52,14 +52,20 @@ class UnoViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
 
     @objc func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
+        
         if let error = error {
+            
             let ac = UIAlertController(title: "Error al guardar", message: error.localizedDescription, preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
+            
         } else {
+            
             let ac = UIAlertController(title: "Imagen Guardada", message: "La imagen se ha guardado satisfactoriamente", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         }
+        
     }
+    
 }

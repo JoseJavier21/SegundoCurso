@@ -117,7 +117,7 @@ class DosViewController: UIViewController, UITextFieldDelegate{
 
     // Para que cuando se pulse  fuera del un textField
     func keyboardWhenTapeAround(){
-        // Aqui es donde la da la funcionalidad
+
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
     }

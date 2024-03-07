@@ -38,9 +38,8 @@ class TresViewController: UITableViewController {
         }catch let error as NSError {
             print("No se ha podido ejecutar fecth. \(error), \(error.userInfo)")
         }
+        
     }
-
-    // MARK: - Table view data source
 
     
     override func numberOfSections(in tableView: UITableView) -> Int {

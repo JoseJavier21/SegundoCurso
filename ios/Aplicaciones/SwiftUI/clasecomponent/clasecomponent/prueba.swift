@@ -21,7 +21,7 @@ struct ConteentView: View{
         VStack{
             
             Text("Bienvenido, \(userData.username)")
-            UserProfileView()
+           // UserProfileView(userData: )
         }
     }
     
@@ -32,7 +32,8 @@ struct UserProfileView: View {
     @Binding var userData: UserData
     
     var body: some View {
-        TextField("Introduce tu nombre", text: userData.username)
+        //TextField("Introduce tu nombre", text: userData.username)
+        Text("hola")
     }
 }
 
