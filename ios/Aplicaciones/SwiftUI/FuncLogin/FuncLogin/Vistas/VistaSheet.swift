@@ -9,19 +9,19 @@ import SwiftUI
 
 struct VistaSheet: View {
     
-    @EnvironmentObject var model: ViewModel
-    
+    @ObservedObject var model: ViewModel
+    @State var user: String = "user"
     //var nombre: String = UserDefaults.standard.string(forKey: "usuario" ) ?? ""
     
     var body: some View {
-
         
-        Text("Nombre de usuario: \(model.user)")
-        Text("Contraseña de usuario: \(model.pass)")
+        Text("Nombre de usuario: \(user)")
+        //Text("Contraseña de usuario: \(model.pass)")
+        
     }
+    
 }
 
 #Preview {
-    VistaSheet()
-        .environmentObject(ViewModel())
+    VistaSheet(model: ViewModel())
 }

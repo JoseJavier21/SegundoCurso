@@ -10,7 +10,7 @@ import Foundation
 
 class ViewModel: ObservableObject{
     
-    @Published var user: String = "user"
-    @Published var pass: String = "pass"
+    @Published var user: String = ""
+    @Published var pass: String = ""
     
 }

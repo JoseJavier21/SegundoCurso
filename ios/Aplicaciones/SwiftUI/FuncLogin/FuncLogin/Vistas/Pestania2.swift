@@ -21,16 +21,14 @@ struct Pestania2: View {
             Form{
                 
                 Section("Datos del usuario"){
-                    Text("Nombre: nfnhgnfhn")
-                    Text("Contraseña: 23423535")
+                    Text("Nombre: \(nombre)")
+                    Text("Contraseña: \(contra)")
                     
                 }
                 
-                Section("Cambiar nombre"){
-                    TextField("nombre de usuario", text: $nombre)
-                }
-                
-                Section("Cambiar contraseña"){
+                Section("Cambiar nombre y contraseña"){
+                    TextField("nombre", text: $nombre)
+
                     TextField("contraseña ", text: $contra)
                     
                     Toggle("recordar contraseña", isOn: $recordaruser)

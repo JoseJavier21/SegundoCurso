@@ -27,7 +27,7 @@ struct Pestania1: View {
             }
             .padding(.top, 15)
             .sheet(isPresented: $isPresent, onDismiss: {isPresent = false}, content: {
-                VistaSheet()
+                VistaSheet(model: ViewModel())
                     .presentationDetents([.fraction(0.5)])
             })
             

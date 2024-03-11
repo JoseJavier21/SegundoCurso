@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let defaults = UserDefaults.standard
-    
+    @State var usuairo: String = "user"
+    @State var contra: String = "pass"
     @State var send: Bool = false
+    
     @EnvironmentObject var model: ViewModel
     
     var body: some View {
@@ -34,7 +35,7 @@ struct ContentView: View {
                         .bold()
                         .padding(.top, 100)
                     
-                    TextField("Nombre de usuario", text: $model.user)
+                    TextField("Nombre de usuario", text: $usuairo)
                         .frame(width: 300, height: 40)
                         .background(.gray)
                         .opacity(0.3)
@@ -43,7 +44,7 @@ struct ContentView: View {
                         .foregroundStyle(.black)
                     
                     
-                    SecureField("Contraseña", text: $model.pass)
+                    SecureField("Contraseña", text: $contra)
                         .frame(width: 300, height: 40)
                         .background(.gray)
                         .cornerRadius(3)
@@ -54,10 +55,8 @@ struct ContentView: View {
                     
                     Button(action: {
                         
-                        
                         envio()
-                            
-                            
+   
                     }){
                         Text("Login")
                             .frame(width: 150, height: 70)
@@ -71,11 +70,14 @@ struct ContentView: View {
                     })
                     
                     
-                    Text("Recuperar contraseña")
+                    Button("Recuperar contraseña"){
+                        Pestania2()
+                    }
                         .foregroundStyle(.cyan)
                         .bold()
                         .padding(.leading, 130)
                         .padding(.top, 20)
+                    
                 }
                 .padding(.bottom, 100)
             }
@@ -87,17 +89,23 @@ struct ContentView: View {
     
     
     func envio(){
-        if model.user.lowercased() == "user" && model.pass.lowercased() == "pass" && model.pass.count >= 4{
+        
+        if  usuairo.lowercased() == "user" && contra.lowercased() == "pass" && contra.count >= 4{
             
-//            defaults.set($user, forKey: "usuario")
-//            defaults.set($contra, forKey: "password")
-//            
-//            defaults.synchronize()
+            //var saveUser = UserDefaults.standard.setValue(usuairo, forKey: "user")
+                        
+            //let savePass = UserDefaults.standard.string(forKey: "pass")
+            //model.pass = $pass
+            //model.user = "user"
+            
+            //UserDefaults.standard.synchronize()
             
             send = true
             print("se envio los datos")
             
         }else{
+            
+            
             
             send = false
             print("no se enviaron los datos")
